@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "oceanheart:blocks/planks_nature_crystal"
+  }
+}

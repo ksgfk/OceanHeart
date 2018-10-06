@@ -1,48 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="12621242-1d54-4612-b4f8-0bad6148b610" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/TexturesInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockHaveInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOresGoldStrange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendGolden.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemNuggetLegend.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld_gold_strange.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_end_gold_strange.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_nether_gold_strange.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_gold_strange.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_golden.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/nugget_legend.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_end_gold_strange.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_gold_strange.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_gold_strange.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_overworld_gold_strange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_overworld_gold_strange.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend_golden.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend_golden.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/nugget_legend.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/nugget_legend.png.mcmeta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OceanHeart.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/OceanHeart.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OceanHeart.iws" beforeDir="false" afterPath="$PROJECT_DIR$/OceanHeart.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/item/ItemBlockVariants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/item/ItemBlockVariants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/IMetaName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/IMetaName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/EnumHandlers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/EnumHandlers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
-    </list>
+    <list default="true" id="ef19192f-6df9-4735-8f84-4f118491156d" name="Legendary series ore" comment="Legendary series ore" />
+    <list id="12621242-1d54-4612-b4f8-0bad6148b610" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -139,7 +99,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="info" value="1" />
-          <entry key="java" value="107" />
+          <entry key="java" value="108" />
           <entry key="json" value="59" />
           <entry key="lang" value="7" />
           <entry key="mcmeta" value="3" />
@@ -148,7 +108,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="I18n" value="7" />
-          <entry key="JAVA" value="106" />
+          <entry key="JAVA" value="107" />
           <entry key="JSON" value="57" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Scratch" value="1" />
@@ -160,7 +120,7 @@
           <entry key="I18n" value="700" />
           <entry key="JAVA" value="821" />
           <entry key="JSON" value="44" />
-          <entry key="PLAIN_TEXT" value="42" />
+          <entry key="PLAIN_TEXT" value="78" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -170,12 +130,22 @@
           <entry key="json" value="22" />
           <entry key="lang" value="700" />
           <entry key="mcmeta" value="31" />
+          <entry key="txt" value="36" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang">
           <provider selected="true" editor-type-id="text-editor">
@@ -185,7 +155,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="250">
@@ -287,7 +257,28 @@
             <path>
               <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
               <item name="OceanHeart" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OceanHeart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OceanHeart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OceanHeart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
@@ -297,8 +288,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,7 +300,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="SearchEverywhereHistoryKey" value="addInformation&#9;PSI&#9;JAVA://net.minecraft.block.Block#addInformation&#10;Item&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/init/Items.java&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;ItemCo&#9;PSI&#9;JAVA://net.minecraft.item.ItemCompass&#10;ItemCl&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538817871153" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538818011772" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Avaritia" />
@@ -439,17 +430,33 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="12621242-1d54-4612-b4f8-0bad6148b610" name="Default Changelist" comment="" />
+      <changelist id="ef19192f-6df9-4735-8f84-4f118491156d" name="Legendary series ore" comment="" />
       <created>1538786828926</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538786828926</updated>
     </task>
+    <task id="LOCAL-00001" summary="1.新增传说系列矿物&#10;2.重新排版了语言文件">
+      <created>1538817881226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1538817881226</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1.新增传说系列矿物&#10;2.重新排版了语言文件">
+      <created>1538817910891</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1538817910891</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23324397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23324397" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -458,14 +465,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3277512" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42978725" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42978725" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Messages" order="9" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -481,6 +488,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <MESSAGE value="1.新增传说系列矿物&#10;2.重新排版了语言文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.新增传说系列矿物&#10;2.重新排版了语言文件" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -523,13 +532,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
@@ -838,6 +840,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="91" column="87" selection-start-line="91" selection-start-column="87" selection-end-line="91" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,93 @@
+# =========================
+# #######
+# Item #
+# #######
+# ----------Sword----------
+item.trailblazer_sword.name=Trailblazer Sword
+item.nature_sword.name=Nature Sworld
+item.explorer_sword.name=Explorer Sword
+item.baldr_sword.name=The last light
+item.morges_sword.name=Morges Sword
+item.sargart_sword.name=Sargart Sword
+item.yan_sword.name=Yan
+item.deepsea_sword.name=Deep Sea
+item.atlantis_sword.name=Atlantis
+item.van_sword.name=Van
+item.druidheart_sword.name=Druid Heart
+item.sun_sword.name=Sun
+item.firehug_sword.name=Entropy
+# -----------Tool-----------
+item.nature_boots_deterioration.name=Nature Boots
+item.nature_chestplate_deterioration.name=Nature Chestplate
+item.nature_helmet_deterioration.name=Nature Helmet
+item.nature_leggings_deterioration.name=Nature Leggings
+item.nature_pickaxe.name=Nature Pickaxe
+item.nature_axe.name=Nature Axe
+item.nature_hoe.name=Nature Hoe
+item.nature_shovel.name=Nature Shovel
+# -----------Ingot-----------
+item.ingot_crystal_nature.name=Nature crystal
+item.ingot_crystal_nature_deterioration.name=Degraded natural crystallization
+item.ingot_legend.name=Legendary ingot
+item.ingot_legend_golden.name=Golden legendary
+# -----------Nugget-----------
+item.nugget_legend.name=Legendary power
+# -----------Powder-----------
+item.powder_crystal_nature.name=Natural crystalline powder
+item.powder_crystal_nature_small.name=Small Natural crystalline powder
+# -----------Other-----------
+item.leaves_crystal_nature.name=Leaves(Texture not completed)
+# ===========================
+# ########
+# Block #
+# ########
+# ------------Ore------------
+tile.block_natural_force_crystal.name=Natural ore(abandoned)
+tile.ore_overworld_nature_crystal.name=Natural mineral
+tile.ore_nether_nature_crystal.name=Natural mineral
+tile.ore_end_nature_crystal.name=Natural mineral
+tile.ore_overworld_gold_strange.name=Strange gold ore
+# ------------Tree------------
+tile.planks_nature_crystal.name=Natural wood board
+tile.log_nature_crystal.name=Natural logs
+tile.leaves_nature_crystal.name=Natural leaves
+tile.sapling_nature_crystal.name=Natural tree sapling
+# =========================
+# ###############
+# Creative Tab #
+# ###############
+itemGroup.oceanheart=Ocean Heart
+# ===========================
+# ##############
+# Enchantment #
+# ##############
+# ------------Level------------
+enchantment.level.20=XX
+enchantment.level.25=XXV
+enchantment.level.11=XI
+enchantment.level.15=XV
+enchantment.level.12=XII
+enchantment.level.27=XXVII
+enchantment.level.18=XVIII
+enchantment.level.35=XXXVI
+enchantment.level.45=XLV
+enchantment.level.100=C
+enchantment.level.200=CC
+enchantment.level.5000=MMMMM
+enchantment.level.10000=MMMMMMMMMM
+# ===========================
+##########
+# Entity #
+##########
+entity.super_golem.name=Tree man
+# ===========================
+##########
+#  Info  #
+##########
+# ----------Item.ingot----------
+tooltip.item.ingot_legend.desc=WOW,Let's see what this is.Legendary ingot?!
+tooltip.item.ingot_legend_golden.desc=WOW!Golden legendary!
+tooltip.item.nugget_legend.desc=A long time ago...
+# ----------Block.ingot----------
+tooltip.tile.ore_overworld_gold_strange.desc=It looks like a gold ore but it doesn't...Try putting it in a furnace.
+# =========================
