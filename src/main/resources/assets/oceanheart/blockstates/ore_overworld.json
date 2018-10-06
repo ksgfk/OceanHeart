@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=nature_crystal": {
+      "model": "oceanheart:ore_overworld_nature_crystal"
+    }
+  }
+}

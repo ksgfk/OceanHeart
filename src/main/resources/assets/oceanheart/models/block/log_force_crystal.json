@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "end": "oceanheart:blocks/log_force_crystal_top",
+    "side": "oceanheart:blocks/log_force_crystal"
+  }
+}

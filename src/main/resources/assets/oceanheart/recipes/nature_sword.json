@@ -1,0 +1,19 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    " X ",
+    " X ",
+    " # "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_sword"
+    },
+    "X": {
+      "item": "oceanheart:ingot_crystal_nature"
+    }
+  },
+  "result": {
+    "item": "oceanheart:nature_sword"
+  }
+}

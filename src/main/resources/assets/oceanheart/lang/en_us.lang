@@ -1,0 +1,56 @@
+item.trailblazer_sword.name=Trailblazer Sword
+item.nature_sword.name=Nature Sword
+item.explorer_sword.name=Explorer Sword
+item.ingot_crystal_nature.name=Natural Crystal
+item.nature_pickaxe.name=Nature Pickaxe
+item.nature_axe.name=Nature Axe
+item.nature_hoe.name=Nature Hoe
+item.nature_shovel.name=Nature Shovel
+item.ingot_crystal_nature_deterioration.name=Deteriorated Nature Crystal
+item.powder_crystal_nature.name=Powder of Natural Crystal
+item.powder_crystal_nature_small.name=A little bit powder of Natural Crystal
+item.leaves_crystal_nature.name=Leaves
+item.nature_boots_deterioration.name=Nature Boots
+item.nature_chestplate_deterioration.name=Nature Chestplate
+item.nature_helmet_deterioration.name=Nature Helmet
+item.nature_leggings_deterioration.name=Nature Leggings
+item.baldr_sword.name=The Last Light
+item.morges_sword.name=Sword of Morges
+item.sargart_sword.name=Sargart
+item.yan_sword.name=Yan
+item.deepsea_sword.name=Sword of Deep Sea
+item.atlantis_sword.name=Atlantis Sword
+item.van_sword.name=Van Sword
+item.druidheart_sword.name=Heart of Dryad
+item.sun_sword.name=Sun Sword
+item.firehug_sword.name=Hug Fire
+
+tile.block_natural_force_crystal.name=Block of Natural Crystal
+tile.ore_overworld_nature_crystal.name=Nature Crystal Ore
+tile.ore_overworld.name=Nature Crystal Ore
+tile.ore_nether_nature_crystal.name=Nature Crystal Ore of Nether
+tile.ore_nether.name=Nature Crystal Ore of Nether
+tile.ore_end_nature_crystal.name=Nature Crystal Ore of End
+tile.ore_end.name=Nature Crystal Ore of End
+tile.planks_nature_crystal.name=Nature Crystal Planks
+tile.log_nature_crystal.name=Nature Crystal Log
+tile.leaves_nature_crystal.name=Nature Crystal Leaves
+tile.sapling_nature_crystal.name=Nature Crystal Sapling
+
+itemGroup.oceanheart=Ocean Heart
+
+enchantment.level.20=XX
+enchantment.level.25=XXV
+enchantment.level.11=XI
+enchantment.level.15=XV
+enchantment.level.12=XII
+enchantment.level.27=XXVII
+enchantment.level.18=XVIII
+enchantment.level.35=XXXVI
+enchantment.level.45=XLV
+enchantment.level.100=C
+enchantment.level.200=CC
+enchantment.level.5000=MMMMM
+enchantment.level.10000=MMMMMMMMMM
+
+entity.super_golem.name=Tree man

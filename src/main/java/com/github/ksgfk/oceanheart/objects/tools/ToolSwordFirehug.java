@@ -1,0 +1,134 @@
+package com.github.ksgfk.oceanheart.objects.tools;
+
+import com.github.ksgfk.oceanheart.OceanHeart;
+import com.github.ksgfk.oceanheart.common.Config;
+import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
+import com.github.ksgfk.oceanheart.event.EventHandler;
+import com.github.ksgfk.oceanheart.init.ItemInit;
+import com.github.ksgfk.oceanheart.util.IHasMod;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.projectile.EntityFireball;
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemStack;
+import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.*;
+import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+
+import javax.annotation.Nullable;
+import java.util.List;
+
+public class ToolSwordFirehug extends ItemAxe implements IHasMod {
+    public ToolSwordFirehug(String name, ToolMaterial materual) {
+        super(materual, 18F, -2.0F);
+        setUnlocalizedName(name);
+        setRegistryName(name);
+        setCreativeTab(CreativeTabsOceanHeart.tabsOceanHeart);
+
+        MinecraftForge.EVENT_BUS.register(this);
+
+        ItemInit.ITEMS.add(this);
+    }
+
+    public void registerModels() {
+        OceanHeart.proxy.registerItemRenderer(this, 0, "inventory");
+    }
+
+    @Override
+    @SideOnly(Side.CLIENT)
+    public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+        super.addInformation(stack, worldIn, tooltip, flagIn);
+
+        if (stack.getTagCompound() == null) {
+            stack.setTagCompound(new NBTTagCompound());
+            NBTTagCompound nbt1 = new NBTTagCompound();
+
+            nbt1.setInteger("count", 0);
+            stack.getTagCompound().setTag("count", nbt1);
+        }
+
+        int count = stack.getTagCompound().getInteger("count");
+
+        try {
+            tooltip.add(Config.swordFirehug_1);
+            tooltip.add(Config.underline);
+            //tooltip.add(Config.swordYanhug_3 + switchOnOff);
+            tooltip.add(Config.swordFirehug_2 + count + "/10");
+            tooltip.add(Config.swordFirehug_3);
+            tooltip.add(Config.underline);
+            if (stack.getEnchantmentTagList().tagCount() == 0) {
+                stack.addEnchantment(Enchantment.getEnchantmentByID(16), 15);
+                stack.addEnchantment(Enchantment.getEnchantmentByID(49), 2);
+                stack.addEnchantment(Enchantment.getEnchantmentByID(17), 8);
+                stack.addEnchantment(Enchantment.getEnchantmentByID(18), 8);
+                stack.addEnchantment(Enchantment.getEnchantmentByID(21), 10);
+                stack.addEnchantment(Enchantment.getEnchantmentByID(20), 10);
+            }
+            if (!(stack.getTagCompound().hasKey("Unbreakable"))) {
+                stack.setTagCompound(new NBTTagCompound().getCompoundTag("Unbreakable"));
+                stack.getTagCompound().setBoolean("Unbreakable", true);
+            }
+        } catch (NullPointerException e) {
+            System.out.println("No nbt key called \"levelup\"");
+        }
+    }
+
+    @Override
+    public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand) {
+        EventHandler.hitBlockBoom event;
+        event = new EventHandler.hitBlockBoom(player, player.getPosition(), player.world);
+        EventHandler.EVENT_BUS.post(event);
+        if (!world.isRemote) {
+            ItemStack item1 = player.getHeldItemMainhand();
+
+            Entity fireball1 = new EntityFireball(world, player, player.getLook(1.0F).x, player.getLook(1.0F).y, player.getLook(1.0F).z) {
+                private float explosionPower = 5.0F;
+
+                @Override
+                protected void onImpact(RayTraceResult result) {
+                    if (!this.world.isRemote) {
+                        if (result.entityHit != null) {
+                            result.entityHit.attackEntityFrom(DamageSource.causeFireballDamage(this, this.shootingEntity), 30.0F);
+                            this.applyEnchantments(this.shootingEntity, result.entityHit);
+                        }
+                        boolean flag = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.shootingEntity);
+                        this.world.newExplosion(null, this.posX, this.posY, this.posZ, this.explosionPower, flag, flag);
+                        this.setDead();
+                    }
+                }
+            };
+            Entity fireball = new EntityFireball(world, player, player.getLook(1.0F).x, player.getLook(1.0F).y, player.getLook(1.0F).z) {
+                private float explosionPower = 0.0F;
+
+                @Override
+                protected void onImpact(RayTraceResult result) {
+                    if (!this.world.isRemote) {
+                        if (result.entityHit != null) {
+                            result.entityHit.attackEntityFrom(DamageSource.causeFireballDamage(this, this.shootingEntity), 6.0F);
+                            this.applyEnchantments(this.shootingEntity, result.entityHit);
+                        }
+                        boolean flag = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.shootingEntity);
+                        this.world.newExplosion(null, this.posX, this.posY, this.posZ, this.explosionPower, flag, flag);
+                        this.setDead();
+                    }
+                }
+            };
+
+            int count1 = item1.getTagCompound().getInteger("count");
+            if (count1 == 10) {
+                player.world.spawnEntity(fireball1);
+                item1.getTagCompound().setInteger("count", 0);
+            } else {
+                player.world.spawnEntity(fireball);
+                item1.getTagCompound().setInteger("count", item1.getTagCompound().getInteger("count") + 1);
+            }
+        }
+        return super.onItemRightClick(world, player, hand);
+    }
+}
