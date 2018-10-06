@@ -41,7 +41,6 @@ public class RegistryHandler {
 
     public static void otherRegisteries() {
         GameRegistry.registerWorldGenerator(new WorldGenCustomOres(), 0);
-
     }
 
     public static void perInitRegistries() {

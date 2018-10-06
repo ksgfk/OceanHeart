@@ -4,6 +4,9 @@ package com.github.ksgfk.oceanheart.init;
 import com.github.ksgfk.oceanheart.OceanHeart;
 import com.github.ksgfk.oceanheart.objects.armours.ArmourBase;
 import com.github.ksgfk.oceanheart.objects.items.ItemBase;
+import com.github.ksgfk.oceanheart.objects.items.ItemIngotLegend;
+import com.github.ksgfk.oceanheart.objects.items.ItemIngotLegendGolden;
+import com.github.ksgfk.oceanheart.objects.items.ItemNuggetLegend;
 import com.github.ksgfk.oceanheart.objects.tools.*;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.inventory.EntityEquipmentSlot;
@@ -39,6 +42,9 @@ public class ItemInit {
     public static final Item POWDER_CRYSTAL_NATURE = new ItemBase("powder_crystal_nature");
     public static final Item POWDER_CRYSTAL_NATURE_SMALL = new ItemBase("powder_crystal_nature_small");
     public static final Item LEAVES_CRYSTAL_NATURE = new ItemBase("leaves_crystal_nature");
+    public static final Item INGOT_LEGEND = new ItemIngotLegend("ingot_legend");
+    public static final Item INGOT_LEGEND_GOLDEN = new ItemIngotLegendGolden("ingot_legend_golden");
+    public static final Item NUGGET_LEGEND = new ItemNuggetLegend("nugget_legend");
     //Tools.
     //If you want to set damage and attack speed,you should create new classes in package tools and extend ItemAxe
     //怎么有这么多斧头? --ksgfk

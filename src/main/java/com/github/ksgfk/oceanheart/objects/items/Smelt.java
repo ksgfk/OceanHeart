@@ -3,8 +3,6 @@ package com.github.ksgfk.oceanheart.objects.items;
 import com.github.ksgfk.oceanheart.init.BlockInit;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 

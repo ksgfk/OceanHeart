@@ -4,7 +4,8 @@ import net.minecraft.util.IStringSerializable;
 
 public class EnumHandlers {
     public static enum EnumType implements IStringSerializable {
-        CRYSTAL_NATURE(0,"nature_crystal");
+        CRYSTAL_NATURE(0, "nature_crystal");
+        //GOLD_STRANGE(1, "gold_strange");
 
         private static final EnumType[] META_LOOKUP = new EnumType[values().length];
         private final int meta;

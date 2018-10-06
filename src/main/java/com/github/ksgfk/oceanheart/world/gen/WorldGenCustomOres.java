@@ -17,24 +17,32 @@ import java.util.Random;
 
 public class WorldGenCustomOres implements IWorldGenerator {
     private WorldGenerator ore_nether_nature_crystal, ore_overworld_nature_crystal, ore_end_nature_crystal;
+    private WorldGenerator ore_nether_gold_strange, ore_overworld_gold_strange, ore_end_gold_strange;
 
     public WorldGenCustomOres() {
         ore_nether_nature_crystal = new WorldGenMinable(BlockInit.ORE_NETHER.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandlers.EnumType.CRYSTAL_NATURE), 0, BlockMatcher.forBlock(Blocks.NETHERRACK));
         ore_overworld_nature_crystal = new WorldGenMinable(BlockInit.ORE_OVERWORLD.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandlers.EnumType.CRYSTAL_NATURE), 1, BlockMatcher.forBlock(Blocks.STONE));
         ore_end_nature_crystal = new WorldGenMinable(BlockInit.ORE_END.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandlers.EnumType.CRYSTAL_NATURE), 0, BlockMatcher.forBlock(Blocks.END_STONE));
+
+        //ore_nether_gold_strange = new WorldGenMinable(BlockInit.ORE_GOLD_STRANGE_NETHER.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandlers.EnumType.GOLD_STRANGE), 1, BlockMatcher.forBlock(Blocks.NETHERRACK));
+        ore_overworld_gold_strange = new WorldGenMinable(BlockInit.ORE_GOLD_STRANGE_OVERWORLD.getDefaultState(), 1, BlockMatcher.forBlock(Blocks.DIAMOND_ORE));
+        //ore_end_gold_strange = new WorldGenMinable(BlockInit.ORE_GOLD_STRANGE_END.getDefaultState().withProperty(BlockOres.VARIANT, EnumHandlers.EnumType.GOLD_STRANGE), 0, BlockMatcher.forBlock(Blocks.END_STONE));
     }
 
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {
         switch (world.provider.getDimension()) {
             case -1:
-                runGenerator(ore_nether_nature_crystal, world, random, chunkX, chunkZ, 1, 0, 100);
+                runGenerator(ore_nether_nature_crystal, world, random, chunkX, chunkZ, 0, 0, 100);
+                //runGenerator(ore_nether_gold_strange, world, random, chunkX, chunkZ, 1, 0, 100);
                 break;
             case 0:
-                runGenerator(ore_overworld_nature_crystal, world, random, chunkX, chunkZ, 1, 0, 5);
+                runGenerator(ore_overworld_nature_crystal, world, random, chunkX, chunkZ, 2, 0, 5);
+                runGenerator(ore_overworld_gold_strange, world, random, chunkX, chunkZ, 1, 0, 256);
                 break;
             case 1:
-                runGenerator(ore_end_nature_crystal, world, random, chunkX, chunkZ, 1, 0, 256);
+                runGenerator(ore_end_nature_crystal, world, random, chunkX, chunkZ, 0, 0, 256);
+                //runGenerator(ore_end_gold_strange, world, random, chunkX, chunkZ, 1, 0, 256);
                 break;
         }
     }

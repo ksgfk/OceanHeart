@@ -41,6 +41,8 @@ public class Config {
     public static String swordYanhug_3;
     public static String swordYanhug_4;
 
+    public static String ingotLegend;
+
     public static String on;
     public static String off;
 

@@ -11,10 +11,16 @@ public class BlockInit {
     public static final List<Block> BLOCKS = new ArrayList<Block>();
     //Normal method to register blocks
     public static final Block BLOCK_NATURAL_FORCE_CRYSTAL = new BlockBase("block_natural_force_crystal", Material.IRON);
+    public static final Block ORE_GOLD_STRANGE_OVERWORLD = new BlockHaveInfo("ore_overworld_gold_strange", Material.IRON);
     //Register ores
     public static final Block ORE_END = new BlockOres("ore_end", "end");
     public static final Block ORE_OVERWORLD = new BlockOres("ore_overworld", "overworld");
     public static final Block ORE_NETHER = new BlockOres("ore_nether", "nether");
+
+    //public static final Block ORE_GOLD_STRANGE_END = new BlockOresGoldStrange("ore_gold_end", "end");
+    //public static final Block ORE_GOLD_STRANGE_OVERWORLD = new BlockOresGoldStrange("ore_overworld_g", "overworld");
+    //public static final Block ORE_GOLD_STRANGE_NETHER = new BlockOresGoldStrange("ore_gold_nether", "nether");
+
     //Register trees 不会，一直报错QAQ
     //public static final Block PLANKS = new CustomBlockPlanks("planks");//木板
     //public static final Block LOGS = new CustomBlockLog("planks");//原木

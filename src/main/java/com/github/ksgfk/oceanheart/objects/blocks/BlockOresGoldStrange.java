@@ -5,8 +5,8 @@ import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
 import com.github.ksgfk.oceanheart.init.BlockInit;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.objects.blocks.item.ItemBlockVariants;
-import com.github.ksgfk.oceanheart.util.IMetaName;
 import com.github.ksgfk.oceanheart.util.IHasMod;
+import com.github.ksgfk.oceanheart.util.IMetaName;
 import com.github.ksgfk.oceanheart.util.handlers.EnumHandlers;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -23,12 +23,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
-public class BlockOres extends Block implements IHasMod, IMetaName {
+public class BlockOresGoldStrange extends Block implements IHasMod, IMetaName {
     public static final PropertyEnum<EnumHandlers.EnumType> VARIANT = PropertyEnum.<EnumHandlers.EnumType>create("variant", EnumHandlers.EnumType.class);
 
     private String name, dimension;
 
-    public BlockOres(String name, String dimension) {
+    public BlockOresGoldStrange(String name, String dimension) {
         super(Material.ROCK);
         setUnlocalizedName(name);
         setRegistryName(name);
