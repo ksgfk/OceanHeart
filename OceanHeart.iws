@@ -1,7 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef19192f-6df9-4735-8f84-4f118491156d" name="Legendary series ore" comment="Legendary series ore" />
+    <list default="true" id="ef19192f-6df9-4735-8f84-4f118491156d" name="Legendary series ore" comment="1.新增虚空锭、矿&#10;2.使用非本地化方法添加语言">
+      <change afterPath="$PROJECT_DIR$/OceanHeart_api.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OceanHeart_main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OceanHeart_test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end_gold_strange.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_end.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_end_gold_strange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_end_gold_strange.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend_end.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend_end.png.mcmeta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OceanHeart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OceanHeart.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OceanHeart.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/OceanHeart.ipr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OceanHeart.iws" beforeDir="false" afterPath="$PROJECT_DIR$/OceanHeart.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/block_natural_force_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/leaves.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/log.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/ore_end.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/ore_nether.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/ore_overworld.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/ore_overworld_gold_strange.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/planks.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/sapling.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/lang/en_us.lang" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/lang/zh_cn.lang" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/block_natural_force_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/leaves_nature_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/log_force_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_end_gold_strange.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_end_nature_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_nether_gold_strange.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_nether_nature_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_overworld_gold_strange.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_overworld_nature_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/planks_nature_crystal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/sapling_force_crystal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/atlantis_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/baldr_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/block_natural_force_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/deepsea_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/druidheart_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/explorer_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/firehug_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ingot_crystal_nature.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ingot_crystal_nature_deterioration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ingot_legend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ingot_legend_golden.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/leaves_crystal_nature.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/morges_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_axe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_boots_deterioration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_chestplate_deterioration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_helmet_deterioration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_hoe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_leggings_deterioration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_pickaxe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_shovel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nugget_legend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_end_gold_strange.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_end_nature_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_nether_gold_strange.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_nether_nature_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_overworld_gold_strange.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_overworld_nature_crystal.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/powder_crystal_nature.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/powder_crystal_nature_small.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/sargart_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/sun_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/trailblazer_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/van_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/yan_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_axe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_boots_deterioration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_chestplate_deterioration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_helmet_deterioration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_hoe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_leggings_deterioration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_pickaxe.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_shovel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_sword.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/powder_crystal_nature.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/block_natural_force_crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/leave_force_crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/log_force_crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/log_force_crystal_top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_end_nature_crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_nether_nature_crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_overworld_gold_strange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_overworld_gold_strange.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_overworld_nature_crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/planks_nature_crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/sapling_nature_crystal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/entity/super_golem.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/atlantis_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/baldr_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/deepsea_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/druidheart_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/explorer_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/firehug_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_crystal_nature.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_crystal_nature_deterioration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_legend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_legend.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_legend_golden.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_legend_golden.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/leaves_crystal_nature.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/morges_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_axe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_boots_deterioration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_chestplate_deterioration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_helmet_deterioration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_hoe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_leggings_deterioration.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_pickaxe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_shovel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nugget_legend.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nugget_legend.png.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/powder_crystal_nature.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/powder_crystal_nature_small.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/sargart_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/sun_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/trailblazer_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/van_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/yan_sword.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/models/armor/nature_layer_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/models/armor/nature_layer_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/mcmod.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/pack.mcmeta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDeepSea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDeepSea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDruidHeart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDruidHeart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordExplorer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordFirehug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordFirehug.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordMorges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordMorges.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSargart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSargart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordYan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordYan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" afterDir="false" />
+    </list>
     <list id="12621242-1d54-4612-b4f8-0bad6148b610" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -55,6 +204,18 @@
     <breakpoint_rules converted="true" />
     <ui_properties converted="true" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="368518757">
       <usages-collector id="statistics.lifecycle.project">
@@ -91,25 +252,29 @@
     <session id="-302098656">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="info" value="1" />
-          <entry key="java" value="108" />
-          <entry key="json" value="59" />
-          <entry key="lang" value="7" />
+          <entry key="java" value="142" />
+          <entry key="json" value="65" />
+          <entry key="lang" value="16" />
           <entry key="mcmeta" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="I18n" value="7" />
-          <entry key="JAVA" value="107" />
-          <entry key="JSON" value="57" />
+          <entry key="I18n" value="16" />
+          <entry key="JAVA" value="141" />
+          <entry key="JSON" value="63" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -117,54 +282,26 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="I18n" value="700" />
-          <entry key="JAVA" value="821" />
+          <entry key="I18n" value="1485" />
+          <entry key="JAVA" value="1015" />
           <entry key="JSON" value="44" />
-          <entry key="PLAIN_TEXT" value="78" />
+          <entry key="PLAIN_TEXT" value="129" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="info" value="33" />
-          <entry key="java" value="821" />
+          <entry key="java" value="1015" />
           <entry key="json" value="22" />
-          <entry key="lang" value="700" />
+          <entry key="lang" value="1485" />
           <entry key="mcmeta" value="31" />
-          <entry key="txt" value="36" />
+          <entry key="txt" value="87" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="92" column="27" selection-end-line="92" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="91" column="87" selection-start-line="91" selection-start-column="87" selection-end-line="91" selection-end-column="87" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -181,16 +318,593 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\Users\KSGFK\.gradle\wrapper\dists\gradle-2.14-bin\76oc0mnc3ieqtsukq90mp0rxk\gradle-2.14" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="2.14" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="OceanHeart" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="OceanHeart" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="reobfJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'OceanHeart'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="sourceMainJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="deobfProvidedDummyTask" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="retromapReplacedTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles api classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="apiClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse classpath file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the Minecraft Server" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="runServer" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'OceanHeart'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="applyBinaryPatches" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="deobfMcMCP" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractMcpMappings" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes api resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processApiResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'OceanHeart'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="deobfCompileDummyTask" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractUserdev" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractRangemapReplacedTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Sets up the bare minimum to build a minecraft mod. Ideally for CI servers" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="setupCiWorkspace" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="makeEclipseCleanRunClient" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="retromapTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="DevWorkspace + the deobfuscated Minecraft source linked as a source jar." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="setupDecompWorkspace" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="sourceApiJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="retromapReplacedMain" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractMcpData" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="deobfMcSRG" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractNatives" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'OceanHeart'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles api Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileApiJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse JDT settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="retromapReplacedApi" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractRangemapReplacedMain" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse project file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="remapMcSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractAnnotationsJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="decompileMc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="getAssetIndex" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'OceanHeart'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="retromapMain" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractRangemapReplacedApi" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="retromapApi" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="sourceJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="makeStart" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'OceanHeart'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="genSrgs" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="fixMcSources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="getVersionJson" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleares the ForgeGradle cache. DONT RUN THIS unless you want a fresh start, or the dev tells you to." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanCache" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="sourceTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="CIWorkspace + natives and assets to run and test Minecraft" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="setupDevWorkspace" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="recompileMc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the ForgeGradle run configurations for intellij Idea" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="genIntellijRuns" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractRangemapMain" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="getAssets" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="downloadClient" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="makeEclipseCleanRunServer" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="mergeJars" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractDependencyATs" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'OceanHeart'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="applySourcePatches" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="downloadServer" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractRangemapTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="splitServerJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="extractRangemapApi" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'OceanHeart'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the Minecraft client" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="runClient" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="6154979773734" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2268221996" />
+        <entry key="$PROJECT_DIR$/gradle.properties" value="2907694036" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="159431464" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/ad97fe8faaf01a3d3faacecd58e8fa6e78a973ca/guava-18.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/235993117036d44d126f76db9ea2202ee4884682/opencsv-2.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudbees/diff4j/1.1/e01e5168c15a325a548be3a0d18af5eac6f6343f/diff4j-1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.abrarsyed.jastyle/jAstyle/1.3/61707e2098d6ee76983a8c7c2915ac38c84115da/jAstyle-1.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/2.1.0/3d51239e46537fc45dd18c639cc29bbc4e390326/trove4j-2.1.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jponge/lzma-java/1.3/c0f18880fb29c7bfc088a6e114c66fe30a5e8df2/lzma-java-1.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nothome/javaxdelta/2.0.1/c99bfecfaa91279b8a3d7d25a99cbbda107c903d/javaxdelta-2.0.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a6dc5db8a12928e583bd3f23e72d3ab611ecd58f/gson-2.2.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tony19/named-regexp/0.2.3/74e99674da3dcbd04e30fc62e164073b4d95e8b9/named-regexp-0.2.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/65cba03c4f6207f2885f88206fcf52c53f8d111b/httpclient-4.3.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.3.3/884b613cfc42948ad5d4cf507286ffe19592ebed/httpmime-4.3.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jvnet.localizer/localizer/1.12/261a0e844fe30de1c30372135275fa0b299bdee4/localizer-1.12-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/1.4/48753e43ff29409fbbeadfb36186cbe27e41b179/commons-io-1.4-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/4809f38359edeea9487f747e09aa58ec8d3a54c5/httpcore-4.3.2-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/28bb0405fddaf04f15058fbfbe01fe2780d7d3b6/commons-logging-1.1.3-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/61e9f9d11fe3e12ec62f633006e99d75fd7f19c8/commons-codec-1.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge.gradle/ForgeGradle/2.3-SNAPSHOT/b3a925ff21e9916833a9e1ced0ad92f36e60a2fb/ForgeGradle-2.3-SNAPSHOT.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/18.0/cce0823396aa693798f8882e64213b1772032b09/guava-18.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/c23708cdb9e80a144db433e23344a788a1fd6599/opencsv-2.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cloudbees/diff4j/1.1/645329c0d4ebbea5f73758929c6e63bab9e77204/diff4j-1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.abrarsyed.jastyle/jAstyle/1.3/42431e5834cfb184d60be4142e2806cf2d806ea/jAstyle-1.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.trove4j/trove4j/2.1.0/c82f2749a460b95de4c9d2466b62f18c23c7c914/trove4j-2.1.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jponge/lzma-java/1.3/a25db9d4d385ccda4825ae1b47a7a61d86e595af/lzma-java-1.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nothome/javaxdelta/2.0.1/d4f5d077f1b15c6f67595015d69572303ad3f66d/javaxdelta-2.0.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.2.4/a60a5e993c98c864010053cb901b7eab25306568/gson-2.2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.tony19/named-regexp/0.2.3/370846bf3837952d981deb8f91e81da8c65b09e1/named-regexp-0.2.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge/forgeflower/1.0.342-SNAPSHOT/83b7d227aa011da5f140558240149ed26a0f5d76/forgeflower-1.0.342-SNAPSHOT.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.3/18f4247ff4572a074444572cee34647c43e7c9c7/httpclient-4.3.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.3.3/e02368d7b56c0c376f227378a4f77de62864d020/httpmime-4.3.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jvnet.localizer/localizer/1.12/6d456886a035b2c3f758059da1f91a823eaa4a62/localizer-1.12.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/1.4/a8762d07e76cfde2395257a5da47ba7c1dbd3dce/commons-io-1.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/trove/trove/1.0.2/112b40581ab9a4d3de4636d49985a7f686d181c8/trove-1.0.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.2/31fbbff1ddbf98f3aa7377c94d33b0447c646b6e/httpcore-4.3.2.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.6/b7f0fc8f61ecadeb3695f0b9464755eee44374d4/commons-codec-1.6.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="OceanHeart" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/ant-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/ant-launcher-1.9.6.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-base-services-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-base-services-groovy-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-cli-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-core-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-docs-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-installation-beacon-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-jvm-services-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-launcher-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-logging-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-messaging-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-model-core-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-model-groovy-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-native-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-open-api-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-process-services-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-resources-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-tooling-api-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-ui-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/gradle-wrapper-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/groovy-all-2.4.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-announce-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-antlr-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-build-comparison-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-build-init-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-code-quality-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-dependency-management-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-diagnostics-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-ear-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-ide-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-ide-native-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-ide-play-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-ivy-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-jacoco-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-javascript-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-jetty-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-language-groovy-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-language-java-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-language-jvm-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-language-native-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-language-scala-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-maven-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-osgi-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-platform-base-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-platform-jvm-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-platform-native-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-platform-play-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-plugin-development-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-plugin-use-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-plugins-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-publish-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-reporting-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-resources-http-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-resources-s3-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-resources-sftp-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-scala-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-signing-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-sonar-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-test-kit-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-testing-base-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-testing-jvm-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-testing-native-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/gradle-tooling-api-builders-2.14.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.14-bin/76oc0mnc3ieqtsukq90mp0rxk/gradle-2.14/lib/plugins/ivy-2.2.0.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mcmod.info" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/TexturesInit.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend.png.mcmeta" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendGolden.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_golden.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemNuggetLegend.java" />
@@ -201,25 +915,42 @@
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_gold_overworld.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_gold_strange.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_gold_strange.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_end_gold_strange.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_nether_gold_strange.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_gold_strange.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_end_gold_strange.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/EnumHandlers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOresGoldStrange.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld_gold_strange.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_nether.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockHaveInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end_gold_strange.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_end_gold_strange.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_end_gold_strange.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_end.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendEnd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDeepSea.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDruidHeart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordExplorer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordFirehug.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordMorges.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSargart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSun.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordYan.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java" />
       </list>
     </option>
   </component>
@@ -228,10 +959,10 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="197" />
-    <option name="y" value="407" />
-    <option name="width" value="1708" />
-    <option name="height" value="689" />
+    <option name="x" value="50" />
+    <option name="y" value="-15" />
+    <option name="width" value="1710" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -252,37 +983,85 @@
           <expand>
             <path>
               <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="462c0819:PsiDirectoryNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="462c0819:PsiDirectoryNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="462c0819:PsiDirectoryNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="462c0819:PsiDirectoryNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="462c0819:PsiDirectoryNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
+              <item name="objects" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,22 +1078,22 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="addInformation&#9;PSI&#9;JAVA://net.minecraft.block.Block#addInformation&#10;Item&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/init/Items.java&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;ItemCo&#9;PSI&#9;JAVA://net.minecraft.item.ItemCompass&#10;ItemCl&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538818011772" />
+    <property name="SearchEverywhereHistoryKey" value="OreGen&#9;PSI&#9;JAVA://net.minecraftforge.event.terraingen.OreGenEvent&#10;addInformation&#9;PSI&#9;JAVA://net.minecraft.block.Block#addInformation&#10;Item&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/init/Items.java&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;ItemCo&#9;PSI&#9;JAVA://net.minecraft.item.ItemCompass&#10;ItemCl&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538924803005" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Avaritia" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.github.ksgfk.oceanheart.objects.items" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ProjectMC\mod\OceanHeart\src\main\resources\assets\oceanheart\textures\items" />
+      <recent name="E:\ProjectMC\mod\OceanHeart\src\main\resources\assets\oceanheart\textures\blocks" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\ProjectMC\mod\OceanHeart\src\main\resources\assets\oceanheart\textures\items" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\ProjectMC\mod\OceanHeart\src\main\resources\assets\oceanheart\textures\blocks" />
-      <recent name="E:\ProjectMC\mod\OceanHeart\src\main\resources\assets\oceanheart\textures\items" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.ksgfk.oceanheart.objects.items" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -343,7 +1122,7 @@
     </configuration>
     <configuration name="Minecraft Client" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="GradleStart" />
-      <module name="OceanHeart" />
+      <module name="OceanHeart_main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -368,7 +1147,7 @@
     </configuration>
     <configuration name="Minecraft Server" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
-      <module name="OceanHeart" />
+      <module name="OceanHeart_main" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -456,7 +1235,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23324397" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22386059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -471,8 +1250,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" order="9" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Messages" order="9" sideWeight="0.49932975" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49932975" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -481,6 +1261,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Gradle" order="8" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -489,169 +1270,11 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <MESSAGE value="1.新增传说系列矿物&#10;2.重新排版了语言文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.新增传说系列矿物&#10;2.重新排版了语言文件" />
+    <MESSAGE value="1.新增虚空锭、矿&#10;2.使用非本地化方法添加语言" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.新增虚空锭、矿&#10;2.使用非本地化方法添加语言" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/util/IStringSerializable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/EntityInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_gold_overworld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_gold_strange/json.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_nature_crystal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_nature_crystal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_gold_overworld.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_end_nature_crystal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_nether_nature_crystal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_nature_crystal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_gold_strange.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="53" selection-start-line="1" selection-start-column="53" selection-end-line="1" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_end_nature_crystal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/item/ItemBlockVariants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/IMetaName.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#1639#1640#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_gold_strange.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/EnumHandlers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/block/state/IBlockState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="7" selection-end-line="23" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/world/gen/feature/WorldGenMinable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/planks.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/log.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/leaves.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld_gold_strange.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/recipes/powder_crystal_nature.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -690,13 +1313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_end_gold_strange.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_nether_gold_strange.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -727,13 +1343,59 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/powder_crystal_nature_small.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="58" column="63" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="27" column="5" selection-start-line="12" selection-start-column="23" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOresGoldStrange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-489">
+          <caret line="35" column="113" selection-start-line="35" selection-start-column="113" selection-end-line="35" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/block/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="1192" selection-start-line="1192" selection-end-line="1195" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld_gold_strange.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end_gold_strange.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_end_gold_strange.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -744,109 +1406,213 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/EntityInit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="72">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="27" column="5" selection-start-line="12" selection-start-column="23" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOresGoldStrange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-489">
-          <caret line="35" column="113" selection-start-line="35" selection-start-column="113" selection-end-line="35" selection-end-column="113" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOres.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_end.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-          <folding>
-            <element signature="e#1264#1287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/block/Block.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="1192" selection-start-line="1192" selection-end-line="1195" selection-end-column="5" />
-          <folding>
-            <element signature="e#35831#35832#0" expanded="true" />
-            <element signature="e#35877#35878#0" expanded="true" />
-          </folding>
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="34" selection-start-line="34" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="535">
+          <caret line="35" column="5" selection-start-line="18" selection-start-column="30" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="44" column="71" lean-forward="true" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockHaveInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="586">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendEnd.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="92" column="27" selection-end-line="92" selection-end-column="27" />
+        <state relative-caret-position="517">
+          <caret line="34" column="120" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="120" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="91" column="87" selection-start-line="91" selection-start-column="87" selection-end-line="91" selection-end-column="87" />
+        <state relative-caret-position="82">
+          <caret line="41" column="99" selection-start-line="41" selection-start-column="99" selection-end-line="41" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-616">
+          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDeepSea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="51" column="95" selection-start-line="51" selection-start-column="95" selection-end-line="51" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDruidHeart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-512">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordExplorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="67" column="103" selection-start-line="67" selection-start-column="103" selection-end-line="67" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordFirehug.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="62" column="95" selection-start-line="62" selection-start-column="95" selection-end-line="62" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordMorges.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSargart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSun.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="42" column="62" lean-forward="true" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/event/terraingen/OreGenEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-997">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/world/gen/feature/WorldGenMinable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="101" selection-start-line="101" selection-end-line="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/fml/common/Mod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="450">
+          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-241">
+          <caret line="86" column="59" lean-forward="true" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="119" selection-start-line="119" selection-end-line="122" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordYan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1577">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="299" selection-start-line="299" selection-end-line="300" />
         </state>
       </provider>
     </entry>

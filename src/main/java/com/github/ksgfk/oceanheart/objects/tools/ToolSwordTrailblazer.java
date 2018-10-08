@@ -1,7 +1,6 @@
 package com.github.ksgfk.oceanheart.objects.tools;
 
 import com.github.ksgfk.oceanheart.OceanHeart;
-import com.github.ksgfk.oceanheart.common.Config;
 import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
@@ -15,6 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -84,54 +84,6 @@ public class ToolSwordTrailblazer extends ItemSword implements IHasMod {
         } else {
             victim.setHealth(victim.getHealth() - victimDamage);
         }
-/*
-        if (levelupValue >= 0 & levelupValue <= 50) {//升级加附魔
-            if (stack.getEnchantmentTagList().hasNoTags()) {
-                stack.addEnchantment(Enchantment.getEnchantmentByID(70), 1);//经验修补1
-            }
-        } else if (levelupValue > 50 & levelupValue <= 200) {
-            if (stack.getEnchantmentTagList().tagCount() == 1) {
-                stack.getEnchantmentTagList().removeTag(0);
-                stack.addEnchantment(Enchantment.getEnchantmentByID(70), 2);//经验修补2
-            }
-        } else if (levelupValue > 200 & levelupValue <= 500) {
-            if (stack.getEnchantmentTagList().tagCount() == 1) {
-                stack.addEnchantment(Enchantment.getEnchantmentByID(16), 1);//锋利1
-            }
-        } else if (levelupValue > 500 & levelupValue <= 1000) {
-            if (stack.getEnchantmentTagList().tagCount() == 2) {
-                stack.getEnchantmentTagList().removeTag(1);
-                stack.addEnchantment(Enchantment.getEnchantmentByID(16), 2);//锋利2
-            }
-        } else if (levelupValue > 1000 & levelupValue <= 1500) {
-            if (stack.getEnchantmentTagList().tagCount() == 2) {
-                stack.getEnchantmentTagList().removeTag(0);
-                stack.getEnchantmentTagList().removeTag(1);
-                stack.addEnchantment(Enchantment.getEnchantmentByID(70), 3);//经验修补3,满级
-                stack.addEnchantment(Enchantment.getEnchantmentByID(16), 3);//锋利3
-            }
-        } else if (levelupValue > 1500 & levelupValue <= 2000) {
-            if (stack.getEnchantmentTagList().tagCount() == 2) {
-                stack.addEnchantment(Enchantment.getEnchantmentByID(19), 1);//击退1
-            }
-        } else if (levelupValue > 2000 & levelupValue <= 2500) {
-            if (stack.getEnchantmentTagList().tagCount() == 3) {
-                stack.getEnchantmentTagList().removeTag(1);
-                stack.addEnchantment(Enchantment.getEnchantmentByID(16), 5);//锋利5
-            }
-        } else if (levelupValue > 2500 & levelupValue <= 3000) {
-            if (stack.getEnchantmentTagList().tagCount() == 3) {
-                stack.getEnchantmentTagList().removeTag(1);
-                stack.addEnchantment(Enchantment.getEnchantmentByID(16), 7);//锋利7
-            }
-        } else if (levelupValue > 3000 & levelupValue <= 3500) {
-            if (stack.getEnchantmentTagList().tagCount() == 3) {
-                stack.getEnchantmentTagList().removeTag(1);
-                stack.addEnchantment(Enchantment.getEnchantmentByID(16), 10);//锋利10
-            }
-        }
-        上面写的什么辣鸡玩意 --@ksgfk
-*/
         switch (levelupValue) {
             case 0:
                 if (stack.getEnchantmentTagList().hasNoTags()) {
@@ -345,19 +297,19 @@ public class ToolSwordTrailblazer extends ItemSword implements IHasMod {
         stack.setTagCompound(nbt);
 
         try {
-            tooltip.add(Config.swordTrailblazerInfo_1);
+            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
             //if (!(stack.getTagCompound() == null)) {
             int a = stack.getTagCompound().getInteger("levelup");
-            tooltip.add(Config.underline);
+            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
             if (a < 100000) {
-                String power_1 = Config.swordTrailblazerInfo_5 + a + "/100000";
+                String power_1 = I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.5") + a + "/100000";
                 tooltip.add(power_1);
-                tooltip.add(Config.swordTrailblazerInfo_2);
-                tooltip.add(Config.underline);
+                tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.2"));
+                tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
             } else {
-                tooltip.add(Config.swordTrailblazerInfo_3);
-                tooltip.add(Config.swordTrailblazerInfo_4);
-                tooltip.add(Config.underline);
+                tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.3"));
+                tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.4"));
+                tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
             }
             // }
         } catch (NullPointerException e) {

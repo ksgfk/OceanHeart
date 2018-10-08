@@ -1,7 +1,6 @@
 package com.github.ksgfk.oceanheart.objects.tools;
 
 import com.github.ksgfk.oceanheart.OceanHeart;
-import com.github.ksgfk.oceanheart.common.Config;
 import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
@@ -10,6 +9,7 @@ import net.minecraft.enchantment.Enchantment;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.Side;
@@ -39,8 +39,8 @@ public class ToolSwordSun extends ItemAxe implements IHasMod {
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);
         try {
-            tooltip.add(Config.swordSunInfo_1);
-            tooltip.add(Config.underline);
+            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
+            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
             if (stack.getEnchantmentTagList().tagCount() == 0) {
                 stack.addEnchantment(Enchantment.getEnchantmentByID(17), 18);
                 stack.addEnchantment(Enchantment.getEnchantmentByID(18), 18);

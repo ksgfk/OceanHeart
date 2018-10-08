@@ -1,7 +1,6 @@
 package com.github.ksgfk.oceanheart.objects.tools;
 
 import com.github.ksgfk.oceanheart.OceanHeart;
-import com.github.ksgfk.oceanheart.common.Config;
 import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
@@ -11,6 +10,7 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -99,8 +99,8 @@ public class ToolSword extends ItemSword implements IHasMod {
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);
-        tooltip.add(Config.swordNatureInfo_1);
-        tooltip.add(Config.swordNatureInfo_2);
-        tooltip.add(Config.underline);
+        tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
+        tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.2"));
+        tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
     }
 }

@@ -1,7 +1,10 @@
 # =========================
-# #######
+tooltip.desc.underline=============
+tooltip.desc.on=开
+tooltip.desc.off=关
+########
 # Item #
-# #######
+########
 # ----------Sword----------
 item.trailblazer_sword.name=开拓者之剑
 item.nature_sword.name=自然之剑
@@ -30,6 +33,7 @@ item.ingot_crystal_nature.name=自然结晶
 item.ingot_crystal_nature_deterioration.name=劣化的自然结晶
 item.ingot_legend.name=传说
 item.ingot_legend_golden.name=金色传说
+item.ingot_legend_end.name=虚无之锭
 # -----------Nugget-----------
 item.nugget_legend.name=传说之力
 # -----------Powder-----------
@@ -38,29 +42,30 @@ item.powder_crystal_nature_small.name=小撮自然结晶粉末
 # -----------Other-----------
 item.leaves_crystal_nature.name=树叶(贴图未完成)
 # ===========================
-# ########
+#########
 # Block #
-# ########
+#########
 # ------------Ore------------
 tile.block_natural_force_crystal.name=自然矿石(废)
 tile.ore_overworld_nature_crystal.name=自然矿物
 tile.ore_nether_nature_crystal.name=自然矿物
 tile.ore_end_nature_crystal.name=自然矿物
 tile.ore_overworld_gold_strange.name=奇怪的金矿石
+tile.ore_end_gold_strange.name=奇怪的末地石
 # ------------Tree------------
 tile.planks_nature_crystal.name=自然木板
 tile.log_nature_crystal.name=自然原木
 tile.leaves_nature_crystal.name=自然树叶
 tile.sapling_nature_crystal.name=自然树苗
 # =========================
-# ###############
+################
 # Creative Tab #
-# ###############
+################
 itemGroup.oceanheart=海洋之心
 # ===========================
-# ##############
+###############
 # Enchantment #
-# ##############
+###############
 # ------------Level------------
 enchantment.level.20=XX
 enchantment.level.25=XXV
@@ -84,10 +89,44 @@ entity.super_golem.name=树人
 ##########
 #  Info  #
 ##########
+# ----------Item.sword----------
+tooltip.item.nature_sword.desc.1=每次攻击吸取敌方最大生命值的25%
+tooltip.item.nature_sword.desc.2=被攻击者为玩家时随机回复0-3生命值
+tooltip.item.atlantis_sword.desc.1=失落之剑
+tooltip.item.baldr_sword.desc.1=圣光在上!这个邪恶看起来可以一战!
+tooltip.item.baldr_sword.desc.2=圣光能量:
+tooltip.item.baldr_sword.desc.3=当主手持有最后的圣光,每隔25s可以释放一次范围治疗术
+tooltip.item.baldr_sword.desc.4=你被
+tooltip.item.baldr_sword.desc.5=治疗了
+tooltip.item.deepsea_sword.desc.1=传说这把剑是由从深海发现的海晶石铸成的.如果你不会游泳,在持有这把剑的时候也不用担心淹死
+tooltip.item.deepsea_sword.desc.2=被动:在水中快速恢复生命值和氧气值.在一定程度上抵挡岩浆的伤害.
+tooltip.item.druidheart_sword.desc.1=平衡、野性、守护
+tooltip.item.explorer_sword.desc.1=当你亮出血条的时候，你已经死了
+tooltip.item.firehug_sword.desc.1=混沌、秩序、重生
+tooltip.item.firehug_sword.desc.2=混乱度:
+tooltip.item.firehug_sword.desc.3=当混乱度充满时,释放一枚超级炸弹
+tooltip.item.morges_sword.desc.1=虚空?宇宙深处?星系?没人知道祂来自哪里
+tooltip.item.sargart_sword.desc.1=永远记住,不要碰它    --???
+tooltip.item.sun_sword.desc.1=天上地下,唯我独尊    --???
+tooltip.item.trailblazer_sword.desc.1=古代遗留下来的兵器,里面的能量似乎已经消耗完了
+tooltip.item.trailblazer_sword.desc.2=被动:每次攻击额外造成当前能量1%的伤害
+tooltip.item.trailblazer_sword.desc.3=能量已充满
+tooltip.item.trailblazer_sword.desc.4=对敌人造成额外1000点伤害
+tooltip.item.trailblazer_sword.desc.5=能量:
+tooltip.item.van_sword.desc.1=泪汍澜而雨集兮,气滂滂而云披
+tooltip.item.van_sword.desc.2=怒气值:
+tooltip.item.van_sword.desc.3=当愤怒值满时,按右按钮可以在一段时间内免疫任何伤害
+tooltip.item.van_sword.desc.4=啊啊啊啊啊啊啊啊啊
+tooltip.item.yan_sword.desc.1=永远不要在家里玩这把剑。你为什么要问？因为它会烧掉你的房子。
+tooltip.item.yan_sword.desc.2=爆裂开关:
+tooltip.item.yan_sword.desc.3=能量:
+tooltip.item.yan_sword.desc.4=当能量充满时，会从天空召唤出大量TNT
 # ----------Item.ingot----------
 tooltip.item.ingot_legend.desc=wow，瞧瞧这是什么，传说矿锭?!
 tooltip.item.ingot_legend_golden.desc=哇，金色传说!
 tooltip.item.nugget_legend.desc=在很久很久以前...
+tooltip.item.ingot_legend_end.desc=琢磨不透
 # ----------Block.ingot----------
 tooltip.tile.ore_overworld_gold_strange.desc=看上去像金矿却不是...烧一下试试
+tooltip.tile.ore_end_gold_strange.desc=嘿，老兄，别乱挖你不了解的矿石
 # =========================

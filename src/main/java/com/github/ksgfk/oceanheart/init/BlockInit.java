@@ -12,6 +12,7 @@ public class BlockInit {
     //Normal method to register blocks
     public static final Block BLOCK_NATURAL_FORCE_CRYSTAL = new BlockBase("block_natural_force_crystal", Material.IRON);
     public static final Block ORE_GOLD_STRANGE_OVERWORLD = new BlockHaveInfo("ore_overworld_gold_strange", Material.IRON);
+    public static final Block ORE_GOLD_STRANGE_END = new BlockHaveInfo("ore_end_gold_strange", Material.IRON);
     //Register ores
     public static final Block ORE_END = new BlockOres("ore_end", "end");
     public static final Block ORE_OVERWORLD = new BlockOres("ore_overworld", "overworld");

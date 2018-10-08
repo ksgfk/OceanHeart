@@ -1,7 +1,6 @@
 package com.github.ksgfk.oceanheart.objects.tools;
 
 import com.github.ksgfk.oceanheart.OceanHeart;
-import com.github.ksgfk.oceanheart.common.Config;
 import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
 import com.github.ksgfk.oceanheart.event.EventHandler;
 import com.github.ksgfk.oceanheart.init.ItemInit;
@@ -15,12 +14,12 @@ import net.minecraft.entity.item.EntityTNTPrimed;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.Side;
@@ -90,10 +89,10 @@ public class ToolSwordYan extends ItemAxe implements IHasMod {
             boolean ifSwitchIsTrue = item.getTagCompound().getBoolean("switch");
             if (!ifSwitchIsTrue) {
                 item.getTagCompound().setBoolean("switch", true);
-                player.sendMessage(new TextComponentString(Config.swordYanhug_2 + Config.on));
+                player.sendMessage(new TextComponentString(I18n.translateToLocal("tooltip." + getUnlocalizedName(item) + ".desc.2") + I18n.translateToLocal("tooltip.desc.on")));
             } else {
                 item.getTagCompound().setBoolean("switch", false);
-                player.sendMessage(new TextComponentString(Config.swordYanhug_2 + Config.off));
+                player.sendMessage(new TextComponentString(I18n.translateToLocal("tooltip." + getUnlocalizedName(item) + ".desc.2") + I18n.translateToLocal("tooltip.desc.off")));
             }
         }
         return super.onItemRightClick(world, player, hand);
@@ -121,18 +120,18 @@ public class ToolSwordYan extends ItemAxe implements IHasMod {
         String switchOnOff;
 
         if (ifSwitchIsTrue) {
-            switchOnOff = Config.on;
+            switchOnOff = I18n.translateToLocal("tooltip.desc.on");
         } else {
-            switchOnOff = Config.off;
+            switchOnOff = I18n.translateToLocal("tooltip.desc.off");
         }
 
         try {
-            tooltip.add(Config.swordYanInfo_1);
-            tooltip.add(Config.underline);
-            tooltip.add(Config.swordYanhug_2 + switchOnOff);
-            tooltip.add(Config.swordYanhug_3 + count + "/7");
-            tooltip.add(Config.swordYanhug_4);
-            tooltip.add(Config.underline);
+            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
+            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
+            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.2") + switchOnOff);
+            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.3") + count + "/7");
+            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.4"));
+            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
             if (stack.getEnchantmentTagList().tagCount() == 0) {
                 stack.addEnchantment(Enchantment.getEnchantmentByID(20), 20);
                 stack.addEnchantment(Enchantment.getEnchantmentByID(49), 20);

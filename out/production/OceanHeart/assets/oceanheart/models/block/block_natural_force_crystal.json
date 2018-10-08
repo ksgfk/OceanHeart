@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "oceanheart:blocks/block_natural_force_crystal"
-  }
-}

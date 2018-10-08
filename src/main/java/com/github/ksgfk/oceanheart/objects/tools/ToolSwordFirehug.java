@@ -16,6 +16,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.*;
 import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.Side;
@@ -56,12 +57,12 @@ public class ToolSwordFirehug extends ItemAxe implements IHasMod {
         int count = stack.getTagCompound().getInteger("count");
 
         try {
-            tooltip.add(Config.swordFirehug_1);
-            tooltip.add(Config.underline);
+            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
+            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
             //tooltip.add(Config.swordYanhug_3 + switchOnOff);
-            tooltip.add(Config.swordFirehug_2 + count + "/10");
-            tooltip.add(Config.swordFirehug_3);
-            tooltip.add(Config.underline);
+            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.2") + count + "/10");
+            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.3"));
+            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
             if (stack.getEnchantmentTagList().tagCount() == 0) {
                 stack.addEnchantment(Enchantment.getEnchantmentByID(16), 15);
                 stack.addEnchantment(Enchantment.getEnchantmentByID(49), 2);
