@@ -17,7 +17,6 @@ import java.util.List;
 
 public class ItemInit {
     public static final List<Item> ITEMS = new ArrayList<Item>();
-
     //Material
     public static final ToolMaterial TOOL_EXPLORER = EnumHelper.addToolMaterial("tool_explorer", 6, 6666, 8.0F, 2.0F, 10);
     public static final ToolMaterial TOOL_TRAILBLAZER = EnumHelper.addToolMaterial("tool_trailblaze", 6, 50, 8.0F, -3.95F, 100);
@@ -43,8 +42,10 @@ public class ItemInit {
     public static final Item INGOT_LEGEND_GOLDEN = new ItemIngotLegendGolden("ingot_legend_golden");
     public static final Item NUGGET_LEGEND = new ItemNuggetLegend("nugget_legend");
     public static final Item INGOT_LEGEND_END = new ItemIngotLegendEnd("ingot_legend_end");
+    public static final Item INGOT_LEVE_SOUL = new ItemIngotLeveSoul("ingot_leve_soul");
+    public static final Item INGOT_OCEAN_SOUL = new ItemIngotOceanSoul("ingot_ocean_soul");
+    public static final Item INGOT_OCEAN_SOUL_UNFORGE = new ItemIngotOceanSoul("ingot_ocean_soul_unforge");
     //Tools.
-    //If you want to set damage and attack speed,you should create new classes in package tools and extend ItemAxe
     //怎么有这么多斧头? --ksgfk
     public static final Item SWORD_FIREHUG = new ToolSwordFirehug("firehug_sword", TOOL_FIREHUG);
     public static final Item SWORD_SUN = new ToolSwordSun("sun_sword", TOOL_SUN);
@@ -63,7 +64,6 @@ public class ItemInit {
     public static final Item AXE_NATURE = new ToolAxe("nature_axe", TOOL_NATURE);
     public static final Item HOE_NATURE = new ToolHoe("nature_hoe", TOOL_NATURE);
     public static final Item SHOVEL_NATURE = new ToolShovel("nature_shovel", TOOL_NATURE);
-
     //Armours
     public static final Item HELMET_NATURE_DETERIORATION = new ArmourBase("nature_helmet_deterioration", ARMOUR_NATURE_DETERIORATION, 1, EntityEquipmentSlot.HEAD);
     public static final Item CHESTPLATE_NATURE_DETERIORATION = new ArmourBase("nature_chestplate_deterioration", ARMOUR_NATURE_DETERIORATION, 1, EntityEquipmentSlot.CHEST);

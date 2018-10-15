@@ -4,16 +4,8 @@ import com.github.ksgfk.oceanheart.OceanHeart;
 import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
-//import com.google.common.collect.Sets;
-//import net.minecraft.block.Block;
-//import net.minecraft.block.material.Material;
-//import net.minecraft.block.state.IBlockState;
-//import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemAxe;
 import net.minecraftforge.common.MinecraftForge;
-//import net.minecraft.item.ItemStack;
-
-//import java.util.Set;
 
 public class ToolAxe extends ItemAxe implements IHasMod {
     //private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE);

@@ -3,6 +3,7 @@ package com.github.ksgfk.oceanheart.util.handlers;
 import com.github.ksgfk.oceanheart.init.BlockInit;
 import com.github.ksgfk.oceanheart.init.EntityInit;
 import com.github.ksgfk.oceanheart.init.ItemInit;
+import com.github.ksgfk.oceanheart.init.ModelInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
 import com.github.ksgfk.oceanheart.world.gen.WorldGenCustomOres;
 import net.minecraft.block.Block;
@@ -46,5 +47,11 @@ public class RegistryHandler {
     public static void perInitRegistries() {
         RenderHandler.registerEntityRenders();
         EntityInit.registerEntities();
+        try {
+            new ModelInit().init();
+            System.out.println("Cross Init successfully");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

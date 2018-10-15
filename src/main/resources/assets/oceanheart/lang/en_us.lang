@@ -34,6 +34,9 @@ item.ingot_crystal_nature_deterioration.name=Degraded natural crystallization
 item.ingot_legend.name=Legendary ingot
 item.ingot_legend_golden.name=Golden legendary
 item.ingot_legend_end.name=Void
+item.ingot_leve_soul.name=熔岩之魂
+item.ingot_ocean_soul.name=海洋之魂
+item.ingot_ocean_soul_unforge.name=粗糙的海洋之魂
 # -----------Nugget-----------
 item.nugget_legend.name=Legendary power
 # -----------Powder-----------
@@ -52,6 +55,8 @@ tile.ore_nether_nature_crystal.name=Natural mineral
 tile.ore_end_nature_crystal.name=Natural mineral
 tile.ore_overworld_gold_strange.name=Strange gold ore
 tile.ore_end_gold_strange.name=Strange end stone
+tile.ore_nether_leve_soul.name=奇怪的地狱岩
+tile.ore_overworld_ocean_soul.name=奇怪的海底石头
 # ------------Tree------------
 tile.planks_nature_crystal.name=Natural wood board
 tile.log_nature_crystal.name=Natural logs
@@ -126,7 +131,12 @@ tooltip.item.ingot_legend.desc=WOW,Let's see what this is.Legendary ingot?!
 tooltip.item.ingot_legend_golden.desc=WOW!Golden legendary!
 tooltip.item.nugget_legend.desc=A long time ago...
 tooltip.item.ingot_legend_end.desc=I can't understand it...
+tooltip.item.ingot_leve_soul.desc=让火焰净化一切!
+tooltip.item.ingot_ocean_soul.desc=海洋,生物的摇篮
+tooltip.item.ingot_ocean_soul_unforge.desc=它内部似乎还有杂质
 # ----------Block.ingot----------
 tooltip.tile.ore_overworld_gold_strange.desc=It looks like a gold ore but it doesn't...Try putting it in a furnace.
 tooltip.tile.ore_end_gold_strange.desc=嘿，老兄，别乱挖你不了解的矿石
+tooltip.tile.ore_nether_leve_soul.desc=好烫!它似乎充满了力量...
+tooltip.tile.ore_overworld_ocean_soul.desc=海底居然还有这种石头
 # =========================

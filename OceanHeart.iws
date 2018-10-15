@@ -2,151 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ef19192f-6df9-4735-8f84-4f118491156d" name="Legendary series ore" comment="1.新增虚空锭、矿&#10;2.使用非本地化方法添加语言">
-      <change afterPath="$PROJECT_DIR$/OceanHeart_api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OceanHeart_main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OceanHeart_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendEnd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end_gold_strange.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_end.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_end_gold_strange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_end_gold_strange.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend_end.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend_end.png.mcmeta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OceanHeart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OceanHeart.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OceanHeart.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/OceanHeart.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ModelInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/SoundInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLeveSoul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotOceanSoul.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/DamageSourceHandlers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_nether_leve_soul.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld_ocean_soul.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_nether_leve_soul.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_ocean_soul.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/entity/entity_flowerpot.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_leve_soul.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_ocean_soul.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_ocean_soul_unforge.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_leve_soul.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_ocean_soul.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_leve_soul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_leve_soul.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_ocean_soul.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_ocean_soul.png.mcmeta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_ocean_soul_unforge.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OceanHeart.iws" beforeDir="false" afterPath="$PROJECT_DIR$/OceanHeart.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/block_natural_force_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/leaves.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/log.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/ore_end.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/ore_nether.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/ore_overworld.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/ore_overworld_gold_strange.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/planks.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/blockstates/sapling.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/lang/en_us.lang" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/lang/zh_cn.lang" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/block_natural_force_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/leaves_nature_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/log_force_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_end_gold_strange.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_end_nature_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_nether_gold_strange.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_nether_nature_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_overworld_gold_strange.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/ore_overworld_nature_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/planks_nature_crystal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/block/sapling_force_crystal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/atlantis_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/baldr_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/block_natural_force_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/deepsea_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/druidheart_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/explorer_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/firehug_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ingot_crystal_nature.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ingot_crystal_nature_deterioration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ingot_legend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ingot_legend_golden.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/leaves_crystal_nature.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/morges_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_boots_deterioration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_chestplate_deterioration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_helmet_deterioration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_leggings_deterioration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nature_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/nugget_legend.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_end_gold_strange.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_end_nature_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_nether_gold_strange.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_nether_nature_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_overworld_gold_strange.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/ore_overworld_nature_crystal.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/powder_crystal_nature.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/powder_crystal_nature_small.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/sargart_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/sun_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/trailblazer_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/van_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/models/item/yan_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_axe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_boots_deterioration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_chestplate_deterioration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_helmet_deterioration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_hoe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_leggings_deterioration.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_pickaxe.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_shovel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/nature_sword.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/recipes/powder_crystal_nature.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/block_natural_force_crystal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/leave_force_crystal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/log_force_crystal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/log_force_crystal_top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_end_nature_crystal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_nether_nature_crystal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_overworld_gold_strange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_overworld_gold_strange.png.mcmeta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/ore_overworld_nature_crystal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/planks_nature_crystal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/blocks/sapling_nature_crystal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/entity/super_golem.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/atlantis_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/baldr_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/deepsea_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/druidheart_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/explorer_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/firehug_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_crystal_nature.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_crystal_nature_deterioration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_legend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_legend.png.mcmeta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_legend_golden.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/ingot_legend_golden.png.mcmeta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/leaves_crystal_nature.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/morges_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_axe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_boots_deterioration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_chestplate_deterioration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_helmet_deterioration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_hoe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_leggings_deterioration.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_pickaxe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_shovel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nature_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nugget_legend.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/nugget_legend.png.mcmeta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/powder_crystal_nature.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/powder_crystal_nature_small.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/sargart_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/sun_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/trailblazer_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/van_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/items/yan_sword.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/models/armor/nature_layer_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/assets/oceanheart/textures/models/armor/nature_layer_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/mcmod.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OceanHeart/pack.mcmeta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/entity/model/ModelKillerWhale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/entity/model/ModelKillerWhale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/event/EventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/event/EventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/EntityInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/EntityInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDeepSea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDeepSea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDruidHeart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDruidHeart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordExplorer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordExplorer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordFirehug.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordFirehug.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordMorges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordMorges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSargart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSargart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordYan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordYan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/TexturesInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/TexturesInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolAxe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolAxe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RenderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RenderHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" afterDir="false" />
@@ -212,7 +98,30 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view />
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OceanHeart" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OceanHeart" type="f1a62948:ProjectNode" />
+                <item name="Source Sets" type="e897c970:GradleViewContributor$SourceSetsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="OceanHeart" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -252,56 +161,95 @@
     <session id="-302098656">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.open.time.5" value="5" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="3" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="2" />
           <entry key="info" value="1" />
-          <entry key="java" value="142" />
-          <entry key="json" value="65" />
-          <entry key="lang" value="16" />
-          <entry key="mcmeta" value="3" />
+          <entry key="java" value="235" />
+          <entry key="json" value="93" />
+          <entry key="lang" value="18" />
+          <entry key="mcmeta" value="4" />
+          <entry key="obj" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="I18n" value="16" />
-          <entry key="JAVA" value="141" />
-          <entry key="JSON" value="63" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="CLASS" value="2" />
+          <entry key="I18n" value="18" />
+          <entry key="JAVA" value="234" />
+          <entry key="JSON" value="91" />
+          <entry key="PLAIN_TEXT" value="8" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="I18n" value="1485" />
-          <entry key="JAVA" value="1015" />
-          <entry key="JSON" value="44" />
-          <entry key="PLAIN_TEXT" value="129" />
+          <entry key="I18n" value="1719" />
+          <entry key="JAVA" value="2685" />
+          <entry key="JSON" value="81" />
+          <entry key="PLAIN_TEXT" value="136" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="5" />
           <entry key="info" value="33" />
-          <entry key="java" value="1015" />
-          <entry key="json" value="22" />
-          <entry key="lang" value="1485" />
-          <entry key="mcmeta" value="31" />
+          <entry key="java" value="2685" />
+          <entry key="json" value="59" />
+          <entry key="lang" value="1719" />
+          <entry key="mcmeta" value="33" />
           <entry key="txt" value="87" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#660#666#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -900,41 +848,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mcmod.info" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/TexturesInit.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_legend.png.mcmeta" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendGolden.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_golden.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemNuggetLegend.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/nugget_legend.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/IMetaName.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOres.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/item/ItemBlockVariants.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_gold_overworld.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_gold_strange.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_gold_strange.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_nether_gold_strange.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_gold_strange.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/EnumHandlers.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOresGoldStrange.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld_gold_strange.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_nether.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockHaveInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end_gold_strange.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_end_gold_strange.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_end_gold_strange.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_end.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendEnd.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java" />
@@ -945,12 +865,40 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordMorges.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSargart.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSun.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordYan.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/EntityInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RenderHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end_gold_strange.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolAxe.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemLeveSoul.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_leve_soul.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_leve_soul.png.mcmeta" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_nether_leve_soul.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_nether_leve_soul.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_leve_soul.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotOceanSoul.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_ocean_soul.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_ocean_soul_unforge.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld_ocean_soul.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_ocean_soul.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_ocean_soul.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/event/EventHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/TexturesInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ModelInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/SoundInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/DamageSourceHandlers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/entity/model/ModelKillerWhale.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java" />
       </list>
     </option>
   </component>
@@ -959,8 +907,8 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="50" />
-    <option name="y" value="-15" />
+    <option name="x" value="270" />
+    <option name="y" value="70" />
     <option name="width" value="1710" />
     <option name="height" value="690" />
   </component>
@@ -978,6 +926,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1013,62 +963,12 @@
             </path>
             <path>
               <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
-              <item name="objects" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1078,15 +978,17 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="OreGen&#9;PSI&#9;JAVA://net.minecraftforge.event.terraingen.OreGenEvent&#10;addInformation&#9;PSI&#9;JAVA://net.minecraft.block.Block#addInformation&#10;Item&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/init/Items.java&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;ItemCo&#9;PSI&#9;JAVA://net.minecraft.item.ItemCompass&#10;ItemCl&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538924803005" />
+    <property name="SearchEverywhereHistoryKey" value="BiomeO&#9;PSI&#9;JAVA://net.minecraft.world.biome.BiomeOcean&#10;WorldGenerator&#9;PSI&#9;JAVA://net.minecraft.world.gen.feature.WorldGenerator&#10;damagetype&#9;PSI&#9;JAVA://net.minecraft.util.DamageSource#damageType&#10;ModelR&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/client/model/ModelLoaderRegistry.java&#10;ModelLo&#9;PSI&#9;JAVA://net.minecraftforge.client.model.ModelLoader&#10;OBJM&#9;PSI&#9;JAVA://net.minecraftforge.client.model.obj.OBJModel&#10;ModelBase&#9;PSI&#9;JAVA://net.minecraft.client.model.ModelBase&#10;ModelLoaderRegistry&#9;PSI&#9;JAVA://net.minecraftforge.client.model.ModelLoaderRegistry&#10;EntitySheep&#9;PSI&#9;JAVA://net.minecraft.entity.passive.EntitySheep&#10;OreGen&#9;PSI&#9;JAVA://net.minecraftforge.event.terraingen.OreGenEvent&#10;addInformation&#9;PSI&#9;JAVA://net.minecraft.block.Block#addInformation&#10;Item&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/init/Items.java&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;ItemCo&#9;PSI&#9;JAVA://net.minecraft.item.ItemCompass&#10;ItemCl&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539586681282" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Avaritia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/CodeChickenLib-1.12.2-3.2.2.353-deobf.jar!/" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\ProjectMC\mod\OceanHeart\src\main\resources\assets\oceanheart\textures\items" />
+      <recent name="E:\ProjectMC\mod\OceanHeart\src\main\resources\assets\oceanheart\models\item" />
+      <recent name="E:\ProjectMC\mod\OceanHeart\src\main\resources\assets\oceanheart\models\entity" />
       <recent name="E:\ProjectMC\mod\OceanHeart\src\main\resources\assets\oceanheart\textures\blocks" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -1229,13 +1131,20 @@
       <option name="project" value="LOCAL" />
       <updated>1538817910891</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="1.新增虚空锭、矿&#10;2.使用非本地化方法添加语言">
+      <created>1538974559776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1538974559776</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22386059" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19906166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1244,14 +1153,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3277512" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.42978725" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.7219858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067025" side_tool="true" visible="true" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Messages" order="9" sideWeight="0.49932975" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067025" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="9" sideWeight="0.49932975" weight="0.32907802" />
       <window_info anchor="bottom" id="Build" order="10" sideWeight="0.49932975" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1261,7 +1170,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Gradle" order="8" />
+      <window_info anchor="right" id="Gradle" order="8" weight="0.3297587" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1275,27 +1184,86 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/recipes/powder_crystal_nature.json">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/event/entity/living/LivingAttackEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="337">
+          <caret line="47" column="13" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/recipes/nature_axe.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordFirehug.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+        <state relative-caret-position="1422">
+          <caret line="104" column="17" lean-forward="true" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1401#1402#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/util/EntityDamageSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
-          <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/util/DamageSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6409#6410#0" expanded="true" />
+            <element signature="e#6446#6447#0" expanded="true" />
+            <element signature="e#7143#7144#0" expanded="true" />
+            <element signature="e#7189#7190#0" expanded="true" />
+            <element signature="e#7601#7602#0" expanded="true" />
+            <element signature="e#7628#7629#0" expanded="true" />
+            <element signature="e#9284#9285#0" expanded="true" />
+            <element signature="e#9322#9323#0" expanded="true" />
+            <element signature="e#10426#10427#0" expanded="true" />
+            <element signature="e#10453#10454#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/util/EntityDamageSourceIndirect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="27" selection-start-column="27" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendGolden.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_golden.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/ingot_leve_soul.png.mcmeta">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1306,75 +1274,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/block_natural_force_crystal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_nether_gold_strange.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="53" />
+        <state>
+          <caret selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_gold_strange.json">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_gold_strange.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_leve_soul.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="50" selection-start-line="1" selection-start-column="50" selection-end-line="1" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_nether_leve_soul.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="56" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="56" />
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/nugget_legend.json">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_nether_leve_soul.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="45" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="45" />
+          <caret line="3" column="47" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/sargart_sword.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/powder_crystal_nature.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/powder_crystal_nature_small.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockHaveInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="72">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockBase.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLeveSoul.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="27" column="5" selection-start-line="12" selection-start-column="23" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="223">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOresGoldStrange.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotOceanSoul.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-489">
-          <caret line="35" column="113" selection-start-line="35" selection-start-column="113" selection-end-line="35" selection-end-column="113" />
+        <state relative-caret-position="493">
+          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockOres.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_leve_soul.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_ocean_soul.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_ocean_soul_unforge.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
+          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/block/Block.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/world/World.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="1192" selection-start-line="1192" selection-end-line="1195" selection-end-column="5" />
+        <state relative-caret-position="398">
+          <caret line="996" column="9" lean-forward="true" selection-start-line="996" selection-start-column="9" selection-end-line="996" selection-end-column="9" />
+          <folding>
+            <element signature="e#11634#11635#0" expanded="true" />
+            <element signature="e#11686#11687#0" expanded="true" />
+            <element signature="e#101682#101683#0" expanded="true" />
+            <element signature="e#101736#101737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/util/math/Vec3i.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/util/math/BlockPos.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="30" column="11" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding>
+            <element signature="e#1353#1354#0" expanded="true" />
+            <element signature="e#1383#1384#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/fml/common/IWorldGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/world/gen/feature/WorldGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
+            <element signature="e#611#612#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/world/biome/Biome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="628" column="24" selection-start-line="628" selection-start-column="24" selection-end-line="628" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/world/biome/BiomeOcean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+          <folding>
+            <element signature="e#268#269#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1385,234 +1434,161 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_end_gold_strange.json">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_gold_strange.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_ocean_soul.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld_ocean_soul.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="47" />
+          <caret line="3" column="51" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_end_gold_strange.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_end_gold_strange.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="50" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/EntityInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend.json">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_gold_strange.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_legend_end.json">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_ocean_soul.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="35" column="5" selection-start-line="18" selection-start-column="30" selection-end-line="35" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="44" column="71" lean-forward="true" selection-start-line="44" selection-start-column="71" selection-end-line="44" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="70" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockHaveInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendEnd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="34" column="120" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="41" column="99" selection-start-line="41" selection-start-column="99" selection-end-line="41" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-616">
-          <caret line="84" column="21" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDeepSea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="51" column="95" selection-start-line="51" selection-start-column="95" selection-end-line="51" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDruidHeart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-512">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordExplorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="67" column="103" selection-start-line="67" selection-start-column="103" selection-end-line="67" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordFirehug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="62" column="95" selection-start-line="62" selection-start-column="95" selection-end-line="62" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordMorges.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSargart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="42" column="62" lean-forward="true" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/event/terraingen/OreGenEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-997">
-          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/world/gen/feature/WorldGenMinable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="101" selection-start-line="101" selection-end-line="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/fml/common/Mod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="76" column="18" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="35" column="21" lean-forward="true" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-241">
-          <caret line="86" column="59" lean-forward="true" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/common/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="119" selection-start-line="119" selection-end-line="122" selection-end-column="49" />
+        <state relative-caret-position="360">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="131" column="27" selection-start-line="131" selection-start-column="27" selection-end-line="131" selection-end-column="27" />
+        <state relative-caret-position="463">
+          <caret line="135" column="42" selection-start-line="135" selection-start-column="42" selection-end-line="135" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordYan.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1577">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="1111">
+          <caret line="138" column="47" selection-start-line="138" selection-start-column="47" selection-end-line="138" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/event/EventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="299" selection-start-line="299" selection-end-line="300" />
+        <state relative-caret-position="511">
+          <caret line="217" column="2" selection-start-line="217" selection-start-column="2" selection-end-line="217" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/SoundInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ModelInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/TexturesInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/proxy/CommonProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/proxy/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/DamageSourceHandlers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/entity/EntityKillerWhale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/entity/EntitySuperGolem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/entity/model/ModelKillerWhale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#660#666#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

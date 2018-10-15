@@ -13,19 +13,16 @@ public class BlockInit {
     public static final Block BLOCK_NATURAL_FORCE_CRYSTAL = new BlockBase("block_natural_force_crystal", Material.IRON);
     public static final Block ORE_GOLD_STRANGE_OVERWORLD = new BlockHaveInfo("ore_overworld_gold_strange", Material.IRON);
     public static final Block ORE_GOLD_STRANGE_END = new BlockHaveInfo("ore_end_gold_strange", Material.IRON);
+    public static final Block ORE_LEVE_SOUL = new BlockHaveInfo("ore_nether_leve_soul", Material.IRON);
+    public static final Block ORE_OCEAN_SOUL = new BlockHaveInfo("ore_overworld_ocean_soul", Material.IRON);
     //Register ores
     public static final Block ORE_END = new BlockOres("ore_end", "end");
     public static final Block ORE_OVERWORLD = new BlockOres("ore_overworld", "overworld");
     public static final Block ORE_NETHER = new BlockOres("ore_nether", "nether");
-
-    //public static final Block ORE_GOLD_STRANGE_END = new BlockOresGoldStrange("ore_gold_end", "end");
-    //public static final Block ORE_GOLD_STRANGE_OVERWORLD = new BlockOresGoldStrange("ore_overworld_g", "overworld");
-    //public static final Block ORE_GOLD_STRANGE_NETHER = new BlockOresGoldStrange("ore_gold_nether", "nether");
 
     //Register trees 不会，一直报错QAQ
     //public static final Block PLANKS = new CustomBlockPlanks("planks");//木板
     //public static final Block LOGS = new CustomBlockLog("planks");//原木
     //public static final Block LEAVES = new CustomBlockLeaf("leaves");//树叶
     //public static final Block SAPLINGS = new CustomBlockSapling("planks");//树苗
-
 }

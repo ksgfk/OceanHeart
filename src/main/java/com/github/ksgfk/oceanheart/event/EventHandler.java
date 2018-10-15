@@ -1,7 +1,6 @@
 package com.github.ksgfk.oceanheart.event;
 
 import com.github.ksgfk.oceanheart.OceanHeart;
-
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
@@ -209,4 +208,12 @@ public class EventHandler {
             event.setCanceled(true);
         }
     }
+/*
+    @SubscribeEvent
+    public static void attackEvent(LivingAttackEvent event) {
+        if (event.getEntity() instanceof EntityMob) {
+            System.out.println();
+        }
+    }
+*/
 }

@@ -34,6 +34,9 @@ item.ingot_crystal_nature_deterioration.name=劣化的自然结晶
 item.ingot_legend.name=传说
 item.ingot_legend_golden.name=金色传说
 item.ingot_legend_end.name=虚无之锭
+item.ingot_leve_soul.name=熔岩之魂
+item.ingot_ocean_soul.name=海洋之魂
+item.ingot_ocean_soul_unforge.name=粗糙的海洋之魂
 # -----------Nugget-----------
 item.nugget_legend.name=传说之力
 # -----------Powder-----------
@@ -52,6 +55,8 @@ tile.ore_nether_nature_crystal.name=自然矿物
 tile.ore_end_nature_crystal.name=自然矿物
 tile.ore_overworld_gold_strange.name=奇怪的金矿石
 tile.ore_end_gold_strange.name=奇怪的末地石
+tile.ore_nether_leve_soul.name=奇怪的地狱岩
+tile.ore_overworld_ocean_soul.name=奇怪的海底石头
 # ------------Tree------------
 tile.planks_nature_crystal.name=自然木板
 tile.log_nature_crystal.name=自然原木
@@ -126,7 +131,12 @@ tooltip.item.ingot_legend.desc=wow，瞧瞧这是什么，传说矿锭?!
 tooltip.item.ingot_legend_golden.desc=哇，金色传说!
 tooltip.item.nugget_legend.desc=在很久很久以前...
 tooltip.item.ingot_legend_end.desc=琢磨不透
+tooltip.item.ingot_leve_soul.desc=让火焰净化一切!
+tooltip.item.ingot_ocean_soul.desc=海洋,生物的摇篮
+tooltip.item.ingot_ocean_soul_unforge.desc=它内部似乎还有杂质
 # ----------Block.ingot----------
 tooltip.tile.ore_overworld_gold_strange.desc=看上去像金矿却不是...烧一下试试
 tooltip.tile.ore_end_gold_strange.desc=嘿，老兄，别乱挖你不了解的矿石
+tooltip.tile.ore_nether_leve_soul.desc=好烫!它似乎充满了力量...
+tooltip.tile.ore_overworld_ocean_soul.desc=海底居然还有这种石头
 # =========================
