@@ -1,0 +1,25 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "#Y#",
+    "ZXZ",
+    "#Y#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:quartz"
+    },
+    "X": {
+      "item": "minecraft:diamond"
+    },
+    "Y": {
+      "item": "minecraft:gold_nugget"
+    },
+    "Z": {
+      "item": "oceanheart:ingot_legend"
+    }
+  },
+  "result": {
+    "item": "oceanheart:ingot_legend_golden"
+  }
+}

@@ -4,6 +4,7 @@ import com.github.ksgfk.oceanheart.OceanHeart;
 import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EntityLivingBase;
@@ -14,7 +15,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumHand;
-import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -297,19 +297,19 @@ public class ToolSwordTrailblazer extends ItemSword implements IHasMod {
         stack.setTagCompound(nbt);
 
         try {
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
             //if (!(stack.getTagCompound() == null)) {
             int a = stack.getTagCompound().getInteger("levelup");
-            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
+            tooltip.add(I18n.format("tooltip.desc.underline"));
             if (a < 100000) {
-                String power_1 = I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.5") + a + "/100000";
+                String power_1 = I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.5") + a + "/100000";
                 tooltip.add(power_1);
-                tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.2"));
-                tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
+                tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.2"));
+                tooltip.add(I18n.format("tooltip.desc.underline"));
             } else {
-                tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.3"));
-                tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.4"));
-                tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
+                tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.3"));
+                tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.4"));
+                tooltip.add(I18n.format("tooltip.desc.underline"));
             }
             // }
         } catch (NullPointerException e) {

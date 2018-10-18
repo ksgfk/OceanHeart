@@ -39,12 +39,13 @@ public class ItemInit {
     public static final Item POWDER_CRYSTAL_NATURE_SMALL = new ItemBase("powder_crystal_nature_small");
     public static final Item LEAVES_CRYSTAL_NATURE = new ItemBase("leaves_crystal_nature");
     public static final Item INGOT_LEGEND = new ItemIngotLegend("ingot_legend");
-    public static final Item INGOT_LEGEND_GOLDEN = new ItemIngotLegendGolden("ingot_legend_golden");
-    public static final Item NUGGET_LEGEND = new ItemNuggetLegend("nugget_legend");
+    public static final Item INGOT_LEGEND_GOLDEN = new ItemIngotLegend("ingot_legend_golden");
+    public static final Item NUGGET_LEGEND = new ItemIngotLegend("nugget_legend");
     public static final Item INGOT_LEGEND_END = new ItemIngotLegendEnd("ingot_legend_end");
-    public static final Item INGOT_LEVE_SOUL = new ItemIngotLeveSoul("ingot_leve_soul");
-    public static final Item INGOT_OCEAN_SOUL = new ItemIngotOceanSoul("ingot_ocean_soul");
-    public static final Item INGOT_OCEAN_SOUL_UNFORGE = new ItemIngotOceanSoul("ingot_ocean_soul_unforge");
+    public static final Item INGOT_LEVE_SOUL = new ItemIngotLeve("ingot_leve_soul");
+    public static final Item INGOT_OCEAN_SOUL = new ItemIngotOcean("ingot_ocean_soul");
+    public static final Item INGOT_OCEAN_SOUL_UNFORGE = new ItemIngotOcean("ingot_ocean_soul_unforge");
+    public static final Item TERMINAL = new ItemLore("terminal");
     //Tools.
     //怎么有这么多斧头? --ksgfk
     public static final Item SWORD_FIREHUG = new ToolSwordFirehug("firehug_sword", TOOL_FIREHUG);

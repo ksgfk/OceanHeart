@@ -44,6 +44,7 @@ item.powder_crystal_nature.name=自然结晶粉末
 item.powder_crystal_nature_small.name=小撮自然结晶粉末
 # -----------Other-----------
 item.leaves_crystal_nature.name=树叶(贴图未完成)
+item.terminal.name=终端
 # ===========================
 #########
 # Block #
@@ -134,6 +135,7 @@ tooltip.item.ingot_legend_end.desc=琢磨不透
 tooltip.item.ingot_leve_soul.desc=让火焰净化一切!
 tooltip.item.ingot_ocean_soul.desc=海洋,生物的摇篮
 tooltip.item.ingot_ocean_soul_unforge.desc=它内部似乎还有杂质
+tooltip.item.terminal.desc=和指挥部连络的便携通讯工具
 # ----------Block.ingot----------
 tooltip.tile.ore_overworld_gold_strange.desc=看上去像金矿却不是...烧一下试试
 tooltip.tile.ore_end_gold_strange.desc=嘿，老兄，别乱挖你不了解的矿石

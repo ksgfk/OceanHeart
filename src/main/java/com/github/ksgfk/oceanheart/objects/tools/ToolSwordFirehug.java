@@ -1,11 +1,11 @@
 package com.github.ksgfk.oceanheart.objects.tools;
 
 import com.github.ksgfk.oceanheart.OceanHeart;
-import com.github.ksgfk.oceanheart.common.Config;
 import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
 import com.github.ksgfk.oceanheart.event.EventHandler;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
@@ -16,7 +16,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.*;
 import net.minecraft.util.math.RayTraceResult;
-import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.Side;
@@ -57,12 +56,12 @@ public class ToolSwordFirehug extends ItemAxe implements IHasMod {
         int count = stack.getTagCompound().getInteger("count");
 
         try {
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
-            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
+            tooltip.add(I18n.format("tooltip.desc.underline"));
             //tooltip.add(Config.swordYanhug_3 + switchOnOff);
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.2") + count + "/10");
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.3"));
-            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.2") + count + "/10");
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.3"));
+            tooltip.add(I18n.format("tooltip.desc.underline"));
             if (stack.getEnchantmentTagList().tagCount() == 0) {
                 stack.addEnchantment(Enchantment.getEnchantmentByID(16), 15);
                 stack.addEnchantment(Enchantment.getEnchantmentByID(49), 2);

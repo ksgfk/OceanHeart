@@ -36,6 +36,7 @@ public class OceanHeart {
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         Smelt.registerSmelting();
+        //Recipe.register();
         EventHandler.init();
     }
 

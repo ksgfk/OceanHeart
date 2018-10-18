@@ -44,6 +44,7 @@ item.powder_crystal_nature.name=Natural crystalline powder
 item.powder_crystal_nature_small.name=Small Natural crystalline powder
 # -----------Other-----------
 item.leaves_crystal_nature.name=Leaves(Texture not completed)
+item.terminal.name=Terminal
 # ===========================
 #########
 # Block #
@@ -134,6 +135,7 @@ tooltip.item.ingot_legend_end.desc=I can't understand it...
 tooltip.item.ingot_leve_soul.desc=让火焰净化一切!
 tooltip.item.ingot_ocean_soul.desc=海洋,生物的摇篮
 tooltip.item.ingot_ocean_soul_unforge.desc=它内部似乎还有杂质
+tooltip.item.terminal.desc=和指挥部连络的便携通讯工具
 # ----------Block.ingot----------
 tooltip.tile.ore_overworld_gold_strange.desc=It looks like a gold ore but it doesn't...Try putting it in a furnace.
 tooltip.tile.ore_end_gold_strange.desc=嘿，老兄，别乱挖你不了解的矿石

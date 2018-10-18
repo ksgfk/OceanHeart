@@ -4,6 +4,7 @@ import com.github.ksgfk.oceanheart.OceanHeart;
 import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
@@ -18,7 +19,6 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.text.TextComponentString;
-import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.Side;
@@ -79,7 +79,7 @@ public class ToolSwordBaldrhonor extends ItemAxe implements IHasMod {
                         if (otherPlayerPosY >= playerPosY - treatRadius && otherPlayerPosY <= playerPosY + treatRadius) {
                             if (otherPlayerPosZ >= playerPosZ - treatRadius && otherPlayerPosZ <= playerPosZ + treatRadius) {
                                 otherPlayer.addPotionEffect(health);
-                                otherPlayer.sendMessage(new TextComponentString(I18n.translateToLocal("tooltip." + getUnlocalizedName(item) + ".desc.4") + player.getDisplayNameString() + I18n.translateToLocal("tooltip." + getUnlocalizedName(item) + ".desc.5")));
+                                otherPlayer.sendMessage(new TextComponentString(I18n.format("tooltip." + getUnlocalizedName(item) + ".desc.4") + player.getDisplayNameString() + I18n.format("tooltip." + getUnlocalizedName(item) + ".desc.5")));
                             }
                         }
                     }
@@ -114,11 +114,11 @@ public class ToolSwordBaldrhonor extends ItemAxe implements IHasMod {
         int count = stack.getTagCompound().getInteger("count");
 
         try {
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
-            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.2") + count + "/1000");
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.3"));
-            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
+            tooltip.add(I18n.format("tooltip.desc.underline"));
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.2") + count + "/1000");
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.3"));
+            tooltip.add(I18n.format("tooltip.desc.underline"));
             if (stack.getEnchantmentTagList().tagCount() == 0) {
                 stack.addEnchantment(Enchantment.getEnchantmentByID(17), 20);
                 stack.addEnchantment(Enchantment.getEnchantmentByID(18), 20);

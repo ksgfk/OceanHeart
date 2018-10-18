@@ -7,6 +7,7 @@ import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
@@ -19,7 +20,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextComponentString;
-import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.Side;
@@ -89,10 +89,10 @@ public class ToolSwordYan extends ItemAxe implements IHasMod {
             boolean ifSwitchIsTrue = item.getTagCompound().getBoolean("switch");
             if (!ifSwitchIsTrue) {
                 item.getTagCompound().setBoolean("switch", true);
-                player.sendMessage(new TextComponentString(I18n.translateToLocal("tooltip." + getUnlocalizedName(item) + ".desc.2") + I18n.translateToLocal("tooltip.desc.on")));
+                player.sendMessage(new TextComponentString(I18n.format("tooltip." + getUnlocalizedName(item) + ".desc.2") + I18n.format("tooltip.desc.on")));
             } else {
                 item.getTagCompound().setBoolean("switch", false);
-                player.sendMessage(new TextComponentString(I18n.translateToLocal("tooltip." + getUnlocalizedName(item) + ".desc.2") + I18n.translateToLocal("tooltip.desc.off")));
+                player.sendMessage(new TextComponentString(I18n.format("tooltip." + getUnlocalizedName(item) + ".desc.2") + I18n.format("tooltip.desc.off")));
             }
         }
         return super.onItemRightClick(world, player, hand);
@@ -120,18 +120,18 @@ public class ToolSwordYan extends ItemAxe implements IHasMod {
         String switchOnOff;
 
         if (ifSwitchIsTrue) {
-            switchOnOff = I18n.translateToLocal("tooltip.desc.on");
+            switchOnOff = I18n.format("tooltip.desc.on");
         } else {
-            switchOnOff = I18n.translateToLocal("tooltip.desc.off");
+            switchOnOff = I18n.format("tooltip.desc.off");
         }
 
         try {
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
-            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.2") + switchOnOff);
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.3") + count + "/7");
-            tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName(stack) + ".desc.4"));
-            tooltip.add(I18n.translateToLocal("tooltip.desc.underline"));
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.1"));
+            tooltip.add(I18n.format("tooltip.desc.underline"));
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.2") + switchOnOff);
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.3") + count + "/7");
+            tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.4"));
+            tooltip.add(I18n.format("tooltip.desc.underline"));
             if (stack.getEnchantmentTagList().tagCount() == 0) {
                 stack.addEnchantment(Enchantment.getEnchantmentByID(20), 20);
                 stack.addEnchantment(Enchantment.getEnchantmentByID(49), 20);
