@@ -7,11 +7,11 @@ import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.text.translation.I18n;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -37,6 +37,6 @@ public class BlockHaveInfo extends Block implements IHasMod {
 
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World player, List<String> tooltip, ITooltipFlag advanced) {
-        tooltip.add(I18n.translateToLocal("tooltip." + getUnlocalizedName() + ".desc"));
+        tooltip.add(I18n.format("tooltip." + getUnlocalizedName() + ".desc"));
     }
 }

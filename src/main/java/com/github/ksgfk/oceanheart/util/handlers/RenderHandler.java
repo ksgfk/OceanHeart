@@ -22,6 +22,7 @@ public class RenderHandler {
         });
 
         RenderingRegistry.registerEntityRenderingHandler(EntityKillerWhale.class, new IRenderFactory<EntityKillerWhale>() {
+            @SideOnly(Side.CLIENT)
             @Override
             public Render<? super EntityKillerWhale> createRenderFor(RenderManager manager) {
                 return new RenderKillerWhale(manager);

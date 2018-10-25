@@ -45,6 +45,12 @@ item.powder_crystal_nature_small.name=小撮自然结晶粉末
 # -----------Other-----------
 item.leaves_crystal_nature.name=树叶(贴图未完成)
 item.terminal.name=终端
+item.button_home.name=家
+item.button_signin.name=签到
+item.button_territory.name=领地
+item.button_world.name=主世界
+item.button_spawn.name=传送中枢
+item.button_bank.name=银行
 # ===========================
 #########
 # Block #

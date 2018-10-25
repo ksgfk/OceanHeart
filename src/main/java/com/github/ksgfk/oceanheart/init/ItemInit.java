@@ -46,6 +46,12 @@ public class ItemInit {
     public static final Item INGOT_OCEAN_SOUL = new ItemIngotOcean("ingot_ocean_soul");
     public static final Item INGOT_OCEAN_SOUL_UNFORGE = new ItemIngotOcean("ingot_ocean_soul_unforge");
     public static final Item TERMINAL = new ItemLore("terminal");
+    public static final Item BUTTON_HOME = new ItemBase("button_home");
+    public static final Item BUTTON_SIGNIN = new ItemBase("button_signin");
+    public static final Item BUTTON_TERRITORY = new ItemBase("button_territory");
+    public static final Item BUTTON_WORLD = new ItemBase("button_world");
+    public static final Item BUTTON_SPAWN = new ItemBase("button_spawn");
+    public static final Item BUTTON_BANK = new ItemBase("button_bank");
     //Tools.
     //怎么有这么多斧头? --ksgfk
     public static final Item SWORD_FIREHUG = new ToolSwordFirehug("firehug_sword", TOOL_FIREHUG);

@@ -45,6 +45,12 @@ item.powder_crystal_nature_small.name=Small Natural crystalline powder
 # -----------Other-----------
 item.leaves_crystal_nature.name=Leaves(Texture not completed)
 item.terminal.name=Terminal
+item.button_home.name=Home
+item.button_signin.name=Sign in
+item.button_territory.name=Territory
+item.button_world.name=World
+item.button_spawn.name=Transmission center
+item.button_bank.name=Bank
 # ===========================
 #########
 # Block #

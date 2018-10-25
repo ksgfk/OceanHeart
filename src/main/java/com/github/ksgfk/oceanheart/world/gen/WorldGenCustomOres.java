@@ -7,6 +7,7 @@ import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeOcean;
 import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
@@ -80,7 +81,7 @@ public class WorldGenCustomOres implements IWorldGenerator {
             z = chunkZ * 16 + random.nextInt(16);
             BlockPos blockPos = new BlockPos(x, y, z);//获取矿石坐标
 
-            if (world.getBiome(blockPos).getBiomeName().equals("Ocean")) {//如果是Ocean生物群系才生成矿石
+            if (world.getBiome(blockPos).getBiomeClass().equals(BiomeOcean.class)) {//如果是Ocean生物群系才生成矿石
                 gen.generate(world, random, blockPos);
             }
         }

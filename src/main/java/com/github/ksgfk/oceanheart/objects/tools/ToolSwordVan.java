@@ -17,7 +17,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.text.TextComponentString;
 import net.minecraft.world.World;
-import net.minecraftforge.common.MinecraftForge;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -31,7 +30,7 @@ public class ToolSwordVan extends ItemAxe implements IHasMod {
         setRegistryName(name);
         setCreativeTab(CreativeTabsOceanHeart.tabsOceanHeart);
 
-        MinecraftForge.EVENT_BUS.register(this);
+        //MinecraftForge.EVENT_BUS.register(this);
 
         ItemInit.ITEMS.add(this);
     }
