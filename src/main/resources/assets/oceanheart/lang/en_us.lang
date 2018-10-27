@@ -51,6 +51,7 @@ item.button_territory.name=Territory
 item.button_world.name=World
 item.button_spawn.name=Transmission center
 item.button_bank.name=Bank
+item.button_back.name=Back
 # ===========================
 #########
 # Block #

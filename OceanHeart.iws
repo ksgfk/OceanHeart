@@ -1,31 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef19192f-6df9-4735-8f84-4f118491156d" name="Legendary series ore" comment="替换了过时的方法，新增终端">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_bank.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_home.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_signin.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_spawn.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_territory.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_world.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_nether_leve_soul.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_nether_leve_soul.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_overworld_ocean_soul.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/blocks/ore_overworld_ocean_soul.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_bank.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_bank.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_home.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_signin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_signin.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_spawn.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_spawn.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_territory.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_territory.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_world.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/button_world.png.mcmeta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/terminal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/items/terminal.png.mcmeta" afterDir="false" />
+    <list default="true" id="ef19192f-6df9-4735-8f84-4f118491156d" name="Legendary series ore" comment="新增物品">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockExp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_back.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/cache.properties.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/fileSnapshots.bin" afterDir="false" />
@@ -34,16 +12,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshotUsage.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/2.14/taskArtifacts/treeSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OceanHeart.iws" beforeDir="false" afterPath="$PROJECT_DIR$/OceanHeart.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ModelInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ModelInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockHaveInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockHaveInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordVan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RenderHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RenderHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/IHasMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/IHasMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/models/armor/nature_layer_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/models/armor/nature_layer_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/models/armor/nature_layer_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/oceanheart/textures/models/armor/nature_layer_2.png" afterDir="false" />
     </list>
     <list id="12621242-1d54-4612-b4f8-0bad6148b610" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -175,28 +151,29 @@
     <session id="-302098656">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
+          <entry key="project.closed" value="37" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="2" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="7" />
-          <entry key="project.open.time.6" value="9" />
+          <entry key="project.open.time.6" value="11" />
           <entry key="project.open.time.7" value="5" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="33" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.opened" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cfg" value="1" />
-          <entry key="class" value="2" />
+          <entry key="class" value="6" />
+          <entry key="gradle" value="1" />
           <entry key="info" value="2" />
-          <entry key="java" value="327" />
-          <entry key="json" value="116" />
-          <entry key="lang" value="36" />
+          <entry key="java" value="358" />
+          <entry key="json" value="118" />
+          <entry key="lang" value="38" />
           <entry key="mcmeta" value="4" />
           <entry key="obj" value="1" />
         </counts>
@@ -204,10 +181,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Access Transformers File" value="1" />
-          <entry key="CLASS" value="2" />
-          <entry key="I18n" value="36" />
-          <entry key="JAVA" value="326" />
-          <entry key="JSON" value="115" />
+          <entry key="CLASS" value="6" />
+          <entry key="Groovy" value="1" />
+          <entry key="I18n" value="38" />
+          <entry key="JAVA" value="357" />
+          <entry key="JSON" value="117" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -215,32 +193,43 @@
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="I18n" value="1913" />
-          <entry key="JAVA" value="3726" />
-          <entry key="JSON" value="154" />
-          <entry key="PLAIN_TEXT" value="190" />
+          <entry key="Groovy" value="3" />
+          <entry key="I18n" value="1922" />
+          <entry key="JAVA" value="3922" />
+          <entry key="JSON" value="155" />
+          <entry key="PLAIN_TEXT" value="198" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
+          <entry key="gradle" value="3" />
           <entry key="info" value="33" />
-          <entry key="java" value="3726" />
-          <entry key="json" value="132" />
-          <entry key="lang" value="1913" />
+          <entry key="java" value="3922" />
+          <entry key="json" value="133" />
+          <entry key="lang" value="1922" />
           <entry key="mcmeta" value="33" />
-          <entry key="txt" value="125" />
+          <entry key="txt" value="133" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="364">
+              <caret line="54" column="68" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -258,6 +247,8 @@
     <findStrings>
       <find>CLO</find>
       <find>quartz</find>
+      <find>Model</find>
+      <find>sort</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -699,9 +690,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6156030608389" />
+        <entry key="$PROJECT_DIR$" value="6158288559774" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2268221996" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3087941871" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="2907694036" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="159431464" />
       </map>
@@ -845,11 +836,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_nether_leve_soul.json" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotOceanSoul.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_ocean_soul.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_ocean_soul_unforge.json" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/blockstates/ore_overworld_ocean_soul.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ore_overworld_ocean_soul.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/block/ore_overworld_ocean_soul.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/event/EventHandler.java" />
@@ -860,7 +846,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/recipes/ingot_legend_golden.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Smelt.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/Recipe.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/terminal.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemColorLore.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotVoid.java" />
@@ -869,7 +854,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendEnd.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLeve.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotOcean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java" />
@@ -891,11 +875,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ModelInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/world/gen/WorldGenCustomOres.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockHaveInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" />
-        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_home.json" />
         <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_bank.json" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/IHasMod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockExp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_back.json" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -935,7 +926,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -974,15 +964,6 @@
               <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
-              <item name="init" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1009,36 +990,14 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
               <item name="textures" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OceanHeart" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="oceanheart" type="462c0819:PsiDirectoryNode" />
-              <item name="textures" type="462c0819:PsiDirectoryNode" />
-              <item name="armor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OceanHeart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1048,8 +1007,8 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="recipe&#9;PSI&#9;JAVA://net.minecraft.client.util.RecipeItemHelper&#10;Recipe&#9;PSI&#9;JAVA://net.minecraft.stats.RecipeBook&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;blocks&#9;PSI&#9;JAVA://net.minecraft.init.Blocks&#10;BiomeO&#9;PSI&#9;JAVA://net.minecraft.world.biome.BiomeOcean&#10;WorldGenerator&#9;PSI&#9;JAVA://net.minecraft.world.gen.feature.WorldGenerator&#10;damagetype&#9;PSI&#9;JAVA://net.minecraft.util.DamageSource#damageType&#10;ModelR&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/client/model/ModelLoaderRegistry.java&#10;ModelLo&#9;PSI&#9;JAVA://net.minecraftforge.client.model.ModelLoader&#10;OBJM&#9;PSI&#9;JAVA://net.minecraftforge.client.model.obj.OBJModel&#10;ModelBase&#9;PSI&#9;JAVA://net.minecraft.client.model.ModelBase&#10;ModelLoaderRegistry&#9;PSI&#9;JAVA://net.minecraftforge.client.model.ModelLoaderRegistry&#10;EntitySheep&#9;PSI&#9;JAVA://net.minecraft.entity.passive.EntitySheep&#10;OreGen&#9;PSI&#9;JAVA://net.minecraftforge.event.terraingen.OreGenEvent&#10;addInformation&#9;PSI&#9;JAVA://net.minecraft.block.Block#addInformation&#10;Item&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/init/Items.java&#10;ItemCo&#9;PSI&#9;JAVA://net.minecraft.item.ItemCompass&#10;ItemCl&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540023649212" />
+    <property name="SearchEverywhereHistoryKey" value="Arrays&#9;PSI&#9;JAVA://java.util.Arrays&#10;sort&#9;PSI&#9;JAVA://javax.naming.ldap.SortControl&#10;OBJProperty&#9;PSI&#9;JAVA://net.minecraftforge.client.model.obj.OBJModel.OBJProperty&#10;OBJL&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/client/model/obj/OBJLoader.java&#10;VanillaLoader&#9;PSI&#9;JAVA://net.minecraftforge.client.model.ModelLoader.VanillaLoader&#10;isFullCube&#9;PSI&#9;JAVA://net.minecraftforge.client.model.pipeline.BlockInfo#isFullCube&#10;ExtendedBlockState&#9;PSI&#9;JAVA://net.minecraftforge.common.property.ExtendedBlockState&#10;recipe&#9;PSI&#9;JAVA://net.minecraft.client.util.RecipeItemHelper&#10;Recipe&#9;PSI&#9;JAVA://net.minecraft.stats.RecipeBook&#10;Items&#9;PSI&#9;JAVA://net.minecraft.init.Items&#10;blocks&#9;PSI&#9;JAVA://net.minecraft.init.Blocks&#10;BiomeO&#9;PSI&#9;JAVA://net.minecraft.world.biome.BiomeOcean&#10;WorldGenerator&#9;PSI&#9;JAVA://net.minecraft.world.gen.feature.WorldGenerator&#10;damagetype&#9;PSI&#9;JAVA://net.minecraft.util.DamageSource#damageType&#10;ModelR&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/client/model/ModelLoaderRegistry.java&#10;ModelLo&#9;PSI&#9;JAVA://net.minecraftforge.client.model.ModelLoader&#10;OBJM&#9;PSI&#9;JAVA://net.minecraftforge.client.model.obj.OBJModel&#10;ModelBase&#9;PSI&#9;JAVA://net.minecraft.client.model.ModelBase&#10;ModelLoaderRegistry&#9;PSI&#9;JAVA://net.minecraftforge.client.model.ModelLoaderRegistry&#10;EntitySheep&#9;PSI&#9;JAVA://net.minecraft.entity.passive.EntitySheep&#10;OreGen&#9;PSI&#9;JAVA://net.minecraftforge.event.terraingen.OreGenEvent&#10;addInformation&#9;PSI&#9;JAVA://net.minecraft.block.Block#addInformation&#10;Item&#9;FILE&#9;jar://C:/Users/KSGFK/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/init/Items.java&#10;ItemCo&#9;PSI&#9;JAVA://net.minecraft.item.ItemCompass&#10;ItemCl&#9;PSI&#9;JAVA://net.minecraft.item.ItemClock" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540534280889" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/CodeChickenLib-1.12.2-3.2.2.353-deobf.jar!/" />
@@ -1270,7 +1229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1539845679539</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="新增物品">
+      <created>1540441582159</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1540441582159</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1285,7 +1251,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24463807" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2580429" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1323,164 +1289,11 @@
     <MESSAGE value="1.新增虚空锭、矿&#10;2.使用非本地化方法添加语言" />
     <MESSAGE value="新增熔岩、海洋系列矿石" />
     <MESSAGE value="替换了过时的方法，新增终端" />
-    <option name="LAST_COMMIT_MESSAGE" value="替换了过时的方法，新增终端" />
+    <MESSAGE value="新增物品" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增物品" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegendEnd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLegend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotLeve.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="18" selection-start-line="18" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemIngotOcean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolAxe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolHoe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolPickaxe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolShovel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemLore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="42" selection-end-line="50" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordAtlantis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="104" column="1" selection-start-line="104" selection-start-column="1" selection-end-line="104" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/client/resources/I18n.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordBaldrhonor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="81" column="189" lean-forward="true" selection-start-line="81" selection-start-column="189" selection-end-line="81" selection-end-column="189" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDeepSea.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="52" column="35" selection-start-line="52" selection-start-column="35" selection-end-line="52" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordDruidHeart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="41" column="35" selection-start-line="41" selection-start-column="35" selection-end-line="41" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordExplorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="68" column="39" selection-start-line="68" selection-start-column="39" selection-end-line="68" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordMorges.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordFirehug.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSargart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordSun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="42" column="36" lean-forward="true" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordYan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="133" column="35" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/ingot_ocean_soul_unforge.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1492,13 +1305,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -1544,20 +1350,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5202">
-          <caret line="311" column="39" selection-start-line="311" selection-start-column="39" selection-end-line="311" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RenderHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="31" column="1" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ModelInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -1569,17 +1361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1601,13 +1382,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -1639,30 +1413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="53" column="68" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="52" selection-start-line="52" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_home.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1677,17 +1427,227 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/tools/ToolSwordTrailblazer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="280" column="19" selection-start-line="280" selection-start-column="12" selection-end-line="280" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/items/ItemBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/common/property/ExtendedBlockState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2023">
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/client/model/pipeline/BlockInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="237" column="4" selection-start-line="237" selection-start-column="4" selection-end-line="240" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/client/model/ModelLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="811" column="26" selection-start-line="811" selection-start-column="26" selection-end-line="811" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/client/resources/SimpleReloadableResourceManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/client/model/ModelLoaderRegistry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1264">
+          <caret line="160" column="119" selection-start-line="160" selection-start-column="111" selection-end-line="160" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/IHasMod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/IMetaName.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RenderHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/proxy/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/client/model/obj/OBJLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="49" column="40" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/util/handlers/RegistryHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraftforge/client/model/obj/OBJModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="1266" column="46" lean-forward="true" selection-start-line="1266" selection-start-column="46" selection-end-line="1266" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/proxy/CommonProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/objects/blocks/BlockExp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="30" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.12.2-14.23.5.2768/snapshot/20171003/forgeSrc-1.12.2-14.23.5.2768-sources.jar!/net/minecraft/block/Block.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="412" column="52" lean-forward="true" selection-start-line="412" selection-start-column="52" selection-end-line="412" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/CodeChickenLib-1.12.2-3.2.2.353-deobf.jar!/codechicken/lib/model/modelbase/CCModelRenderer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-447">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/CodeChickenLib-1.12.2-3.2.2.353-deobf.jar!/codechicken/lib/model/bakedmodels/ModelProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/CodeChickenLib-1.12.2-3.2.2.353-deobf.jar!/codechicken/lib/model/loader/blockstate/CCBlockStateLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2356">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/CodeChickenLib-1.12.2-3.2.2.353-deobf.jar!/codechicken/lib/model/forgemodel/CCMultiModel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/naming/ldap/SortControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="108" column="19" selection-start-line="108" selection-start-column="19" selection-end-line="108" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/BlockInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25224">
+          <caret line="4567" column="46" lean-forward="true" selection-start-line="4567" selection-start-column="46" selection-end-line="4567" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_bank.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="5" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/models/item/button_back.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/OceanHeart.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/zh_cn.lang">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="381">
+          <caret line="53" selection-start-line="53" selection-end-line="53" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/assets/oceanheart/lang/en_us.lang">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/ksgfk/oceanheart/init/ItemInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="54" column="68" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>

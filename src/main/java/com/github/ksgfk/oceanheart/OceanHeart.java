@@ -28,6 +28,7 @@ public class OceanHeart {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        //OBJLoader.INSTANCE.addDomain(MODID);
         RegistryHandler.otherRegisteries();
         RegistryHandler.perInitRegistries();
         new Config(event);

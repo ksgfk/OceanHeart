@@ -53,5 +53,6 @@ public class RegistryHandler {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
     }
 }

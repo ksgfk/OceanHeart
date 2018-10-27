@@ -52,6 +52,7 @@ public class ItemInit {
     public static final Item BUTTON_WORLD = new ItemBase("button_world");
     public static final Item BUTTON_SPAWN = new ItemBase("button_spawn");
     public static final Item BUTTON_BANK = new ItemBase("button_bank");
+    public static final Item BUTTON_BACK = new ItemBase("button_back");
     //Tools.
     //怎么有这么多斧头? --ksgfk
     public static final Item SWORD_FIREHUG = new ToolSwordFirehug("firehug_sword", TOOL_FIREHUG);
@@ -76,5 +77,6 @@ public class ItemInit {
     public static final Item CHESTPLATE_NATURE_DETERIORATION = new ArmourBase("nature_chestplate_deterioration", ARMOUR_NATURE_DETERIORATION, 1, EntityEquipmentSlot.CHEST);
     public static final Item LEGGINGS_NATURE_DETERIORATION = new ArmourBase("nature_leggings_deterioration", ARMOUR_NATURE_DETERIORATION, 2, EntityEquipmentSlot.LEGS);
     public static final Item BOOTS_NATURE_DETERIORATION = new ArmourBase("nature_boots_deterioration", ARMOUR_NATURE_DETERIORATION, 1, EntityEquipmentSlot.FEET);
+    //实验物品
 
 }

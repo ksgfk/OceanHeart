@@ -51,6 +51,7 @@ item.button_territory.name=领地
 item.button_world.name=主世界
 item.button_spawn.name=传送中枢
 item.button_bank.name=银行
+item.button_back.name=返回
 # ===========================
 #########
 # Block #
