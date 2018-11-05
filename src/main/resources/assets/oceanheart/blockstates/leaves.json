@@ -1,16 +1,16 @@
 {
   "variants": {
-    "check_decay=true,decayable=true,vartant=nature_crystal": {
-      "model": "oceanheaert:leaves_nature_crystal"
+    "check_decay=true,decayable=true,vartant=yggdrasill": {
+      "model": "oceanheaert:leaves_yggdrasill"
     },
-    "check_decay=true,decayable=false,vartant=nature_crystal": {
-      "model": "oceanheaert:leaves_nature_crystal"
+    "check_decay=true,decayable=false,vartant=yggdrasill": {
+      "model": "oceanheaert:leaves_yggdrasill"
     },
-    "check_decay=false,decayable=true,vartant=nature_crystal": {
-      "model": "oceanheaert:leaves_nature_crystal"
+    "check_decay=false,decayable=true,vartant=yggdrasill": {
+      "model": "oceanheaert:leaves_yggdrasill"
     },
-    "check_decay=false,decayable=false,vartant=nature_crystal": {
-      "model": "oceanheaert:leaves_nature_crystal"
+    "check_decay=false,decayable=false,vartant=yggdrasill": {
+      "model": "oceanheaert:leaves_yggdrasill"
     }
   }
 }

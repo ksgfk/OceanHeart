@@ -1,7 +1,7 @@
 {
   "variants": {
-    "variant=nature_crystal": {
-      "model": "oceanheart:planks_nature_crystal"
+    "variant=yggdrasill": {
+      "model": "oceanheart:planks_yggdrasill"
     }
   }
 }

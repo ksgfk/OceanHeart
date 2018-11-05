@@ -1,6 +1,6 @@
 {
   "parent": "block/leaves",
   "textures": {
-    "all": "oceanheart:blocks/leave_force_crystal"
+    "all": "oceanheart:blocks/leaves_yggdrasill"
   }
 }

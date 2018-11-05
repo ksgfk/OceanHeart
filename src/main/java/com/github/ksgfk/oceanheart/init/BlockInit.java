@@ -1,8 +1,6 @@
 package com.github.ksgfk.oceanheart.init;
 
-import com.github.ksgfk.oceanheart.objects.blocks.BlockBase;
-import com.github.ksgfk.oceanheart.objects.blocks.BlockHaveInfo;
-import com.github.ksgfk.oceanheart.objects.blocks.BlockOres;
+import com.github.ksgfk.oceanheart.objects.blocks.*;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
@@ -21,11 +19,11 @@ public class BlockInit {
     public static final Block ORE_END = new BlockOres("ore_end", "end");
     public static final Block ORE_OVERWORLD = new BlockOres("ore_overworld", "overworld");
     public static final Block ORE_NETHER = new BlockOres("ore_nether", "nether");
-    //实验方块
+    //做实验用的
     //public static final Block EXP = new BlockExp("exp", Material.IRON);
-    //Register trees 不会，一直报错QAQ
-    //public static final Block PLANKS = new CustomBlockPlanks("planks");//木板
-    //public static final Block LOGS = new CustomBlockLog("planks");//原木
-    //public static final Block LEAVES = new CustomBlockLeaf("leaves");//树叶
-    //public static final Block SAPLINGS = new CustomBlockSapling("planks");//树苗
+    //Register trees
+    public static final Block PLANKS = new BlockOHPlanks("planks");//木板
+    public static final Block LOGS = new BlockOHLog("logs");//原木
+    public static final Block LEAVES = new BlockOHLeaf("leaves");//树叶
+    public static final Block SAPLINGS = new BlockOHSapling("saplings");//树苗
 }

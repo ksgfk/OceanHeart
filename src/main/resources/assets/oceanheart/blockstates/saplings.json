@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "stage=0,variant=yggdrasill": {
+      "model": "oceanheart:saplings_yggdrasill"
+    },
+    "stage=1,variant=yggdrasill": {
+      "model": "oceanheart:saplings_yggdrasill"
+    }
+  }
+}
