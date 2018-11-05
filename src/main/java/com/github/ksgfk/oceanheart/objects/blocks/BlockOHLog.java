@@ -14,8 +14,10 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 
 import java.util.Objects;
 
@@ -41,6 +43,7 @@ public class BlockOHLog extends BlockLog implements IHasMod, IMetaName, IHaveMet
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
+
         IBlockState iblockstate = this.getDefaultState().withProperty(VARIANT, EnumLog.values()[meta & 3]);
 
         switch (meta & 0b1100) {
@@ -58,10 +61,13 @@ public class BlockOHLog extends BlockLog implements IHasMod, IMetaName, IHaveMet
         }
 
         return iblockstate;
+
+        //return this.getDefaultState().withProperty(VARIANT, EnumLog.byMetadata(meta));
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
+
         int i = state.getValue(VARIANT).ordinal();
 
         switch (state.getValue(LOG_AXIS)) {
@@ -79,11 +85,21 @@ public class BlockOHLog extends BlockLog implements IHasMod, IMetaName, IHaveMet
         }
 
         return i;
+
+        //return ((EnumLog) state.getValue(VARIANT)).getMetadata();
     }
 
     @Override
     public int damageDropped(IBlockState state) {
         return state.getValue(VARIANT).ordinal();
+        //return ((EnumLog) state.getValue(VARIANT)).getMetadata();
+    }
+
+    @Override
+    public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items) {
+        for (EnumLog logs$enumtype : EnumLog.values()) {
+            items.add(new ItemStack(this, 1, logs$enumtype.getMetadata()));
+        }
     }
 
     @Override

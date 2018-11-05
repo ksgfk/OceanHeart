@@ -15,8 +15,10 @@ import net.minecraft.block.properties.IProperty;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
@@ -69,8 +71,6 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
         return (double) worldIn.rand.nextFloat() < 0.45D;
     }
 
-    //------------------------------------------------------------------------------------------------
-    //Meta四件套
     @Override
     @Deprecated
     public IBlockState getStateFromMeta(int meta) {
@@ -93,7 +93,6 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
         return new BlockStateContainer(this, VARIANT);
     }
 
-    //------------------------------------------------------------------------------------------------
     @Override
     public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state) {
         WorldGenerator treeGenerator;
@@ -104,6 +103,13 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
             default:
                 System.out.println("Error to create tree");
                 break;
+        }
+    }
+
+    @Override
+    public void getSubBlocks(CreativeTabs itemIn, NonNullList<ItemStack> items) {
+        for (EnumSapling enumSapling : EnumSapling.values()) {
+            items.add(new ItemStack(this, 1, enumSapling.getMetadata()));
         }
     }
 }

@@ -6,7 +6,7 @@ import java.util.Locale;
 
 public enum EnumPlanks implements IStringSerializable {
     YGGDRASILL(0)
-    //,HAB(1)
+    ,HAB(1)
     ;
 
     private int meta;
