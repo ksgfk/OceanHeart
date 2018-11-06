@@ -5,7 +5,7 @@ import net.minecraft.util.IStringSerializable;
 import java.util.Locale;
 
 public enum EnumSapling implements IStringSerializable {
-    YGGDRASILL(0), HAB(1);
+    YGGDRASILL(0);
 
     private int meta;
     private static final EnumSapling[] META_LOOKUP = new EnumSapling[values().length];

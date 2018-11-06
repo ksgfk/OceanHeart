@@ -1,20 +1,29 @@
 package com.github.ksgfk.oceanheart.world.gen.generators;
 
-import net.minecraft.world.gen.feature.WorldGenTrees;
+import com.github.ksgfk.oceanheart.init.BlockInit;
+import com.github.ksgfk.oceanheart.objects.blocks.BlockOHLeaf;
+import com.github.ksgfk.oceanheart.objects.blocks.BlockOHLog;
+import com.github.ksgfk.oceanheart.objects.blocks.BlockOHSapling;
+import com.github.ksgfk.oceanheart.util.handlers.EnumLeaves;
+import com.github.ksgfk.oceanheart.util.handlers.EnumLog;
+import net.minecraft.block.state.IBlockState;
+import net.minecraft.util.EnumFacing;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.World;
+import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
-public class WorldGenNatureTrue extends WorldGenTrees {
-    public WorldGenNatureTrue(boolean p_i2027_1_) {
-        super(p_i2027_1_);
-    }
-/*
-    public static final IBlockState LOG_NATURE = BlockInit.LOGS.getDefaultState().withProperty(BlockOHLog.VARIANT, EnumHandlers.EnumType.CRYSTAL_NATURE);
-    public static final IBlockState LEAF = BlockInit.BLOCK_NATURAL_FORCE_CRYSTAL.getStateFromMeta(0);
+import java.util.Random;
+
+public class WorldGenYggdrasillTree extends WorldGenAbstractTree {
+
+    private static final IBlockState LOG = BlockInit.LOGS.getDefaultState().withProperty(BlockOHLog.VARIANT, EnumLog.YGGDRASILL);
+    private static final IBlockState LEAF = BlockInit.LEAVES.getDefaultState().withProperty(BlockOHLeaf.VARIANT, EnumLeaves.YGGDRASILL);
 
     private final int minHeight;
 
-    public WorldGenNatureTrue() {
-        super(false);
-        this.minHeight = 1;
+    public WorldGenYggdrasillTree() {
+        super(true);
+        this.minHeight = 12;
     }
 
     @Override
@@ -86,7 +95,7 @@ public class WorldGenNatureTrue extends WorldGenTrees {
                     IBlockState logState = worldIn.getBlockState(up);
 
                     if (logState.getBlock().isAir(logState, worldIn, up) || logState.getBlock().isLeaves(logState, worldIn, up)) {
-                        this.setBlockAndNotifyAdequately(worldIn, position.up(logHeight), LOG_NATURE);
+                        this.setBlockAndNotifyAdequately(worldIn, position.up(logHeight), LOG);
                     }
                 }
                 return true;
@@ -94,5 +103,4 @@ public class WorldGenNatureTrue extends WorldGenTrees {
         }
         return true;
     }
-    */
 }

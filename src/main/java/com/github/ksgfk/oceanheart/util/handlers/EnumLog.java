@@ -6,13 +6,7 @@ import net.minecraft.util.IStringSerializable;
 import java.util.Locale;
 
 public enum EnumLog implements IStringSerializable {
-    YGGDRASILL(0) {
-        public BlockPlanks.EnumType supplyPlankColor() {
-            return BlockPlanks.EnumType.OAK;
-        }
-    }
-    , HAB(1)
-    ;
+    YGGDRASILL(0);
 
     private int meta;
     private static final EnumLog[] META_LOOKUP = new EnumLog[values().length];

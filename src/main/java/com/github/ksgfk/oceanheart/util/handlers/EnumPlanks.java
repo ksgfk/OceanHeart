@@ -5,15 +5,15 @@ import net.minecraft.util.IStringSerializable;
 import java.util.Locale;
 
 public enum EnumPlanks implements IStringSerializable {
-    YGGDRASILL(0)
-    ,HAB(1)
-    ;
+    YGGDRASILL(0, "yggdrasill");
 
     private int meta;
+    private String name;
     private static final EnumPlanks[] META_LOOKUP = new EnumPlanks[values().length];
 
-    EnumPlanks(int meta) {
+    EnumPlanks(int meta, String name) {
         this.meta = meta;
+        this.name = name;
     }
 
     public int getMetadata() {
@@ -37,5 +37,10 @@ public enum EnumPlanks implements IStringSerializable {
         for (EnumPlanks planks$enumtype : values()) {
             META_LOOKUP[planks$enumtype.getMetadata()] = planks$enumtype;
         }
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
     }
 }

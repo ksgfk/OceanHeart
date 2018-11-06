@@ -13,7 +13,7 @@ public class WorldGenCustomTree implements IWorldGenerator {
 
     }
 /*
-    private final WorldGenerator NATURE = new WorldGenNatureTrue();
+    private final WorldGenerator NATURE = new WorldGenYggdrasillTree();
 
     @Override
     public void generate(Random random, int chunkX, int chunkZ, World world, IChunkGenerator chunkGenerator, IChunkProvider chunkProvider) {

@@ -1,2 +1,2 @@
 # OceanHeart
-A mod for our Minecraft server
+专门为Minecraft黎明时代服务器打造的Mod

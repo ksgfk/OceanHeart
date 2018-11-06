@@ -1,6 +1,7 @@
 {
-  "parent": "block/cube_all",
+  "forge_marker": 1,
+  "parent": "block/cross",
   "textures": {
-    "all": "oceanheart:blocks/saplings_yggdrasill"
+    "cross": "oceanheart:blocks/saplings_yggdrasill"
   }
 }

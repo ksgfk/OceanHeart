@@ -1,19 +1,17 @@
 {
   "variants": {
+    "axis=x,variant=yggdrasill": {
+      "model": "oceanheart:logs_yggdrasill"
+    },
+    "axis=none,variant=yggdrasill": {
+      "model": "oceanheart:logs_yggdrasill"
+    },
     "axis=y,variant=yggdrasill": {
       "model": "oceanheart:logs_yggdrasill"
     },
     "axis=z,variant=yggdrasill": {
-      "model": "oceanheart:logs_yggdrasill",
-      "x": 90
-    },
-    "axis=x,variant=yggdrasill": {
-      "model": "oceanheart:logs_yggdrasill",
-      "x": 90,
-      "y": 90
-    },
-    "axis=none,variant=yggdrasill": {
       "model": "oceanheart:logs_yggdrasill"
     }
-  }
+  },
+  "forge_marker": 1
 }

@@ -29,7 +29,7 @@ import net.minecraft.world.World;
 import java.util.Objects;
 
 public class BlockOHPlanks extends Block implements IMetaName, IHasMod, IHaveMeta {
-    private static final PropertyEnum<EnumPlanks> VARIANT = PropertyEnum.<EnumPlanks>create("variant", EnumPlanks.class);
+    private static final PropertyEnum<EnumPlanks> VARIANT = PropertyEnum.create("variant", EnumPlanks.class);
 
     public BlockOHPlanks(String name) {
         super(Material.WOOD);
@@ -45,7 +45,7 @@ public class BlockOHPlanks extends Block implements IMetaName, IHasMod, IHaveMet
 
     @Override
     public int damageDropped(IBlockState state) {
-        return ((EnumPlanks) state.getValue(VARIANT)).getMetadata();
+        return state.getValue(VARIANT).getMetadata();
     }
 
     @Override
@@ -55,14 +55,15 @@ public class BlockOHPlanks extends Block implements IMetaName, IHasMod, IHaveMet
         }
     }
 
-    @Override
-    public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(VARIANT, EnumPlanks.byMetadata(meta));
-    }
-
+    /*
+        @Override
+        public IBlockState getStateFromMeta(int meta) {
+            return this.getDefaultState().withProperty(VARIANT, EnumPlanks.byMetadata(meta));
+        }
+    */
     @Override
     public int getMetaFromState(IBlockState state) {
-        return ((EnumPlanks) state.getValue(VARIANT)).getMetadata();
+        return state.getValue(VARIANT).getMetadata();
     }
 
     @Override
@@ -72,13 +73,13 @@ public class BlockOHPlanks extends Block implements IMetaName, IHasMod, IHaveMet
 
     @Override
     public BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[]{VARIANT});
+        return new BlockStateContainer(this, VARIANT);
     }
 
     @Override
     public void registerModels() {
-        for (int a = 0; a < EnumHandlers.EnumType.values().length; a++) {
-            OceanHeart.proxy.registerVariantRenderer(Item.getItemFromBlock(this), a, "planks_" + EnumHandlers.EnumType.values()[a].getName(), "inventory");
+        for (int a = 0; a < EnumPlanks.values().length; a++) {
+            OceanHeart.proxy.registerVariantRenderer(Item.getItemFromBlock(this), a, "planks_" + EnumPlanks.values()[a].getName(), "inventory");
         }
     }
 

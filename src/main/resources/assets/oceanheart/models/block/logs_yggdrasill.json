@@ -3,5 +3,6 @@
   "textures": {
     "end": "oceanheart:blocks/logs_yggdrasill_top",
     "side": "oceanheart:blocks/logs_yggdrasill"
-  }
+  },
+  "forge_marker": 1
 }

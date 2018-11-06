@@ -1,16 +1,17 @@
 {
+  "forge_marker": 1,
   "variants": {
-    "check_decay=true,decayable=true,vartant=yggdrasill": {
-      "model": "oceanheaert:leaves_yggdrasill"
+    "check_decay=true,decayable=false,variant=yggdrasill": {
+      "model": "oceanheart:leaves_yggdrasill"
     },
-    "check_decay=true,decayable=false,vartant=yggdrasill": {
-      "model": "oceanheaert:leaves_yggdrasill"
+    "check_decay=true,decayable=true,variant=yggdrasill": {
+      "model": "oceanheart:leaves_yggdrasill"
     },
-    "check_decay=false,decayable=true,vartant=yggdrasill": {
-      "model": "oceanheaert:leaves_yggdrasill"
+    "check_decay=false,decayable=false,variant=yggdrasill": {
+      "model": "oceanheart:leaves_yggdrasill"
     },
-    "check_decay=false,decayable=false,vartant=yggdrasill": {
-      "model": "oceanheaert:leaves_yggdrasill"
+    "check_decay=false,decayable=true,variant=yggdrasill": {
+      "model": "oceanheart:leaves_yggdrasill"
     }
   }
 }

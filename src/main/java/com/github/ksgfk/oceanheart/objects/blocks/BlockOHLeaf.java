@@ -64,12 +64,12 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
     @Override
     @Deprecated
     public IBlockState getStateFromMeta(int meta) {
-        EnumLeaves variant = EnumLeaves.values()[meta & 0b11];
-        return this.getDefaultState().withProperty(VARIANT, variant).withProperty(DECAYABLE, (meta & 4) == 0).withProperty(CHECK_DECAY, (meta & 8) > 0);
+        return this.getDefaultState().withProperty(VARIANT, EnumLeaves.byMetadata(meta));
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
+        /*
         int i = state.getValue(VARIANT).ordinal();
 
         if (!state.getValue(DECAYABLE)) {
@@ -81,6 +81,8 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
         }
 
         return i;
+        */
+        return state.getValue(VARIANT).getMetadata();
     }
 
     @Override
@@ -90,23 +92,22 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
 
     @Override
     public int damageDropped(IBlockState state) {
-        EnumLeaves leafType = state.getValue(VARIANT);
-        return leafType == EnumLeaves.YGGDRASILL ? 9 : leafType.ordinal();
+        return state.getValue(VARIANT).getMetadata();
     }
 
     @Override
     public ItemStack getSilkTouchDrop(IBlockState state) {
-        return new ItemStack(this, 1, state.getValue(VARIANT).ordinal());
+        return new ItemStack(this, 1, state.getValue(VARIANT).getMetadata());
     }
 
     @Override
     public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
-        return new ItemStack(this, 1, state.getValue(VARIANT).ordinal());
+        return new ItemStack(this, 1, state.getValue(VARIANT).getMetadata());
     }
 
     @Override
     public List<ItemStack> onSheared(ItemStack item, IBlockAccess world, BlockPos pos, int fortune) {
-        return NonNullList.withSize(1, new ItemStack(this, 1, world.getBlockState(pos).getValue(VARIANT).ordinal()));
+        return NonNullList.withSize(1, new ItemStack(this, 1, world.getBlockState(pos).getValue(VARIANT).getMetadata()));
     }
 
     @Override

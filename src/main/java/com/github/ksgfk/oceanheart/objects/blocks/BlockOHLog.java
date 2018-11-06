@@ -105,7 +105,7 @@ public class BlockOHLog extends BlockLog implements IHasMod, IMetaName, IHaveMet
     @Override
     public void registerModels() {
         for (int a = 0; a < EnumLog.values().length; a++) {
-            OceanHeart.proxy.registerVariantRenderer(Item.getItemFromBlock(this), a, "log_" + EnumLog.values()[a].getName(), "inventory");
+            OceanHeart.proxy.registerVariantRenderer(Item.getItemFromBlock(this), a, "logs_" + EnumLog.values()[a].getName(), "inventory");
         }
     }
 

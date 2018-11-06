@@ -9,6 +9,7 @@ import com.github.ksgfk.oceanheart.util.IHasMod;
 import com.github.ksgfk.oceanheart.util.IHaveMeta;
 import com.github.ksgfk.oceanheart.util.IMetaName;
 import com.github.ksgfk.oceanheart.util.handlers.EnumSapling;
+import com.github.ksgfk.oceanheart.world.gen.generators.WorldGenYggdrasillTree;
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.IGrowable;
 import net.minecraft.block.properties.IProperty;
@@ -16,6 +17,7 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
@@ -28,7 +30,7 @@ import java.util.Random;
 
 public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, IHasMod, IHaveMeta {
 
-    public static final IProperty<EnumSapling> VARIANT = PropertyEnum.create("variant", EnumSapling.class);
+    private static final IProperty<EnumSapling> VARIANT = PropertyEnum.create("variant", EnumSapling.class);
 
     public BlockOHSapling(String name) {
         setUnlocalizedName(name);
@@ -43,7 +45,7 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
     @Override
     public void registerModels() {
         for (int a = 0; a < EnumSapling.values().length; a++) {
-            OceanHeart.proxy.registerVariantRenderer(Item.getItemFromBlock(this), a, "sapling_" + EnumSapling.values()[a].getName(), "inventory");
+            OceanHeart.proxy.registerVariantRenderer(Item.getItemFromBlock(this), a, "saplings_" + EnumSapling.values()[a].getName(), "inventory");
         }
     }
 
@@ -95,14 +97,21 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
 
     @Override
     public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state) {
-        WorldGenerator treeGenerator;
+        WorldGenerator treeGenerator = null;
 
         switch (state.getValue(VARIANT)) {
             case YGGDRASILL:
+                treeGenerator = new WorldGenYggdrasillTree();
                 break;
             default:
-                System.out.println("Error to create tree");
+                System.out.println("No tree to generate");
                 break;
+        }
+
+        worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 4);
+
+        if (!treeGenerator.generate(worldIn, rand, pos)) {
+            worldIn.setBlockState(pos, state, 4);
         }
     }
 

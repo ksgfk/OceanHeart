@@ -23,8 +23,10 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 
+import java.util.Objects;
+
 public class BlockOres extends Block implements IHasMod, IMetaName {
-    public static final PropertyEnum<EnumHandlers.EnumType> VARIANT = PropertyEnum.<EnumHandlers.EnumType>create("variant", EnumHandlers.EnumType.class);
+    public static final PropertyEnum<EnumHandlers.EnumType> VARIANT = PropertyEnum.create("variant", EnumHandlers.EnumType.class);
 
     private String name, dimension;
 
@@ -39,17 +41,17 @@ public class BlockOres extends Block implements IHasMod, IMetaName {
         this.dimension = dimension;
 
         BlockInit.BLOCKS.add(this);
-        ItemInit.ITEMS.add(new ItemBlockVariants(this).setRegistryName(this.getRegistryName()));
+        ItemInit.ITEMS.add(new ItemBlockVariants(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));
     }
 
     @Override
     public int damageDropped(IBlockState state) {
-        return ((EnumHandlers.EnumType) state.getValue(VARIANT)).getMeta();
+        return state.getValue(VARIANT).getMeta();
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        return ((EnumHandlers.EnumType) state.getValue(VARIANT)).getMeta();
+        return state.getValue(VARIANT).getMeta();
     }
 
     @Override
@@ -66,7 +68,7 @@ public class BlockOres extends Block implements IHasMod, IMetaName {
 
     @Override
     protected BlockStateContainer createBlockState() {
-        return new BlockStateContainer(this, new IProperty[]{VARIANT});
+        return new BlockStateContainer(this, VARIANT);
     }
 
     @Override
