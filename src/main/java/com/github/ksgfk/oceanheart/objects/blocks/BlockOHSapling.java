@@ -102,7 +102,7 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
 
         switch (state.getValue(VARIANT)) {
             case YGGDRASILL:
-                treeGenerator = new WorldGenYggdrasillTree(true, 1);
+                treeGenerator = new WorldGenYggdrasillTree(true);
                 //treeGenerator = new WorldGenBigTree(true);//使用原版方法生成大的树
                 break;
             default:
