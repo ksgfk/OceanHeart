@@ -23,6 +23,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.gen.feature.WorldGenBigTree;
 import net.minecraft.world.gen.feature.WorldGenerator;
 
 import java.util.Objects;
@@ -101,7 +102,8 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
 
         switch (state.getValue(VARIANT)) {
             case YGGDRASILL:
-                treeGenerator = new WorldGenYggdrasillTree();
+                treeGenerator = new WorldGenYggdrasillTree(true, 1);
+                //treeGenerator = new WorldGenBigTree(true);//使用原版方法生成大的树
                 break;
             default:
                 System.out.println("No tree to generate");

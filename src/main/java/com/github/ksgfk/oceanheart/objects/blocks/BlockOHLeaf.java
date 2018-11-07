@@ -28,6 +28,7 @@ import net.minecraft.world.World;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHaveMeta {
 
@@ -115,5 +116,11 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
         for (EnumLeaves enumLeaves$enumtype : EnumLeaves.values()) {
             items.add(new ItemStack(this, 1, enumLeaves$enumtype.getMetadata()));
         }
+    }
+
+    @Override
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+        //修复树叶被破坏后掉落物是橡树苗的bug
+        return Item.getItemFromBlock(BlockInit.LEAVES.getDefaultState().withProperty(VARIANT, EnumLeaves.YGGDRASILL).getBlock());
     }
 }
