@@ -9,6 +9,7 @@ import com.github.ksgfk.oceanheart.util.IHasMod;
 import com.github.ksgfk.oceanheart.util.IHaveMeta;
 import com.github.ksgfk.oceanheart.util.IMetaName;
 import com.github.ksgfk.oceanheart.util.handlers.EnumLeaves;
+import com.github.ksgfk.oceanheart.util.handlers.EnumSapling;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.SoundType;
@@ -65,12 +66,14 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
     @Override
     @Deprecated
     public IBlockState getStateFromMeta(int meta) {
-        return this.getDefaultState().withProperty(VARIANT, EnumLeaves.byMetadata(meta));
+        return this.getDefaultState().withProperty(VARIANT, EnumLeaves.byMetadata(meta))
+                .withProperty(DECAYABLE, (meta & 4) == 0)
+                .withProperty(CHECK_DECAY, (meta & 8) > 0);
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        /*
+
         int i = state.getValue(VARIANT).ordinal();
 
         if (!state.getValue(DECAYABLE)) {
@@ -82,8 +85,8 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
         }
 
         return i;
-        */
-        return state.getValue(VARIANT).getMetadata();
+
+        //return state.getValue(VARIANT).getMetadata();
     }
 
     @Override
@@ -121,6 +124,6 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
         //修复树叶被破坏后掉落物是橡树苗的bug
-        return Item.getItemFromBlock(BlockInit.LEAVES.getDefaultState().withProperty(VARIANT, EnumLeaves.YGGDRASILL).getBlock());
+        return Item.getItemFromBlock(BlockInit.SAPLINGS.getDefaultState().withProperty(BlockOHSapling.VARIANT, EnumSapling.YGGDRASILL).getBlock());
     }
 }

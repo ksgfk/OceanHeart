@@ -23,15 +23,15 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-import net.minecraft.world.gen.feature.WorldGenBigTree;
 import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraftforge.event.terraingen.TerrainGen;
 
 import java.util.Objects;
 import java.util.Random;
 
 public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, IHasMod, IHaveMeta {
 
-    private static final IProperty<EnumSapling> VARIANT = PropertyEnum.create("variant", EnumSapling.class);
+    public static final IProperty<EnumSapling> VARIANT = PropertyEnum.create("variant", EnumSapling.class);
 
     public BlockOHSapling(String name) {
         setUnlocalizedName(name);
@@ -98,12 +98,14 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
 
     @Override
     public void grow(World worldIn, Random rand, BlockPos pos, IBlockState state) {
-        WorldGenerator treeGenerator = null;
+        if (worldIn.isRemote || !TerrainGen.saplingGrowTree(worldIn, rand, pos)) {
+            return;
+        }
 
         switch (state.getValue(VARIANT)) {
             case YGGDRASILL:
-                treeGenerator = new WorldGenYggdrasillTree(true);
-                //treeGenerator = new WorldGenBigTree(true);//使用原版方法生成大的树
+                /*生成世界树,方块更改通知true,倾斜true,生成树*/
+                new WorldGenYggdrasillTree(true).setSloped(true).generate(worldIn, rand, pos);
                 break;
             default:
                 System.out.println("No tree to generate");
@@ -111,10 +113,6 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
         }
 
         worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 4);
-
-        if (!treeGenerator.generate(worldIn, rand, pos)) {
-            worldIn.setBlockState(pos, state, 4);
-        }
     }
 
     @Override
@@ -123,4 +121,6 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
             items.add(new ItemStack(this, 1, enumSapling.getMetadata()));
         }
     }
+
+
 }
