@@ -1,0 +1,16 @@
+{
+  "type": "forge:ore_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oceanheart:yggdrasill_fruit_item"
+    }
+  },
+  "result": {
+    "item": "oceanheart:yggdrasill_fruit"
+  }
+}

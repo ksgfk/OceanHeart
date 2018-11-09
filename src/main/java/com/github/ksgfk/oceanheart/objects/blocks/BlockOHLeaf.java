@@ -127,8 +127,7 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
 
     @Override
     public Item getItemDropped(IBlockState state, Random rand, int fortune) {
-        //修复树叶被破坏后掉落物是橡树苗的bug
-        return Item.getItemFromBlock(BlockInit.SAPLINGS.getDefaultState().withProperty(BlockOHSapling.VARIANT, EnumSapling.YGGDRASILL).getBlock());
+        return ItemInit.YGGDRASILL_FRUIT_SMALL;
     }
 
     @Override
