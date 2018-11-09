@@ -2,6 +2,7 @@ package com.github.ksgfk.oceanheart.objects.tools;
 
 import com.github.ksgfk.oceanheart.OceanHeart;
 import com.github.ksgfk.oceanheart.common.CreativeTabsOceanHeart;
+import com.github.ksgfk.oceanheart.entity.EntityOHFireBall;
 import com.github.ksgfk.oceanheart.event.EventHandler;
 import com.github.ksgfk.oceanheart.init.ItemInit;
 import com.github.ksgfk.oceanheart.util.IHasMod;
@@ -10,12 +11,10 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.entity.projectile.EntityFireball;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.*;
-import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.Side;
@@ -87,38 +86,8 @@ public class ToolSwordFirehug extends ItemAxe implements IHasMod {
         if (!world.isRemote) {
             ItemStack item1 = player.getHeldItemMainhand();
 
-            Entity fireball1 = new EntityFireball(world, player, player.getLook(1.0F).x, player.getLook(1.0F).y, player.getLook(1.0F).z) {
-                private float explosionPower = 5.0F;
-
-                @Override
-                protected void onImpact(RayTraceResult result) {
-                    if (!this.world.isRemote) {
-                        if (result.entityHit != null) {
-                            result.entityHit.attackEntityFrom(DamageSource.causeFireballDamage(this, this.shootingEntity), 30.0F);
-                            this.applyEnchantments(this.shootingEntity, result.entityHit);
-                        }
-                        boolean flag = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.shootingEntity);
-                        this.world.newExplosion(null, this.posX, this.posY, this.posZ, this.explosionPower, flag, flag);
-                        this.setDead();
-                    }
-                }
-            };
-            Entity fireball = new EntityFireball(world, player, player.getLook(1.0F).x, player.getLook(1.0F).y, player.getLook(1.0F).z) {
-                private float explosionPower = 0.0F;
-
-                @Override
-                protected void onImpact(RayTraceResult result) {
-                    if (!this.world.isRemote) {
-                        if (result.entityHit != null) {
-                            result.entityHit.attackEntityFrom(DamageSource.causeFireballDamage(this, this.shootingEntity), 6.0F);
-                            this.applyEnchantments(this.shootingEntity, result.entityHit);
-                        }
-                        boolean flag = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this.shootingEntity);
-                        this.world.newExplosion(null, this.posX, this.posY, this.posZ, this.explosionPower, flag, flag);
-                        this.setDead();
-                    }
-                }
-            };
+            Entity fireball1 = new EntityOHFireBall(world, player, player.getLook(1.0F).x, player.getLook(1.0F).y, player.getLook(1.0F).z,5.0F);
+            Entity fireball = new EntityOHFireBall(world, player, player.getLook(1.0F).x, player.getLook(1.0F).y, player.getLook(1.0F).z,0.0F);
 
             int count1 = item1.getTagCompound().getInteger("count");
             if (count1 == 10) {

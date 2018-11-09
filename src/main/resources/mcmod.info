@@ -1,16 +1,19 @@
 [
-{
-  "modid": "oceanheart",
-  "name": "OceanHeart",
-  "description": "A mod for breakdawn server",
-  "version": "${version}",
-  "mcversion": "${mc_version}",
-  "url": "https://github.com/ksgfk/OceanHeart",
-  "updateUrl": "",
-  "authorList": ["ksgfk", "kabi0210"],
-  "credits": "nope",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
-}
+  {
+    "modid": "oceanheart",
+    "name": "Ocean Heart",
+    "description": "A mod for breakdawn server",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://github.com/ksgfk/OceanHeart",
+    "updateUrl": "",
+    "authorList": [
+      "ksgfk",
+      "kabi0210"
+    ],
+    "credits": "nope",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
 ]

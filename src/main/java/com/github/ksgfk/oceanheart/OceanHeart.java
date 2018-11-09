@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class OceanHeart {
     public static final String MODID = "oceanheart";
     public static final String NAME = "Ocean Heart";
-    public static final String VERSION = "1.12.2";
+    public static final String VERSION = "@version@";
     public static final String CLIENT = "com.github.ksgfk.oceanheart.proxy.ClientProxy";
     public static final String COMMON = "com.github.ksgfk.oceanheart.proxy.CommonProxy";
 
