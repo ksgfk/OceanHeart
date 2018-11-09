@@ -15,6 +15,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
@@ -288,6 +289,7 @@ public class ToolSwordTrailblazer extends ItemSword implements IHasMod {
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
         super.addInformation(stack, worldIn, tooltip, flagIn);
+        tooltip.set(0, TextFormatting.RED + I18n.format(getUnlocalizedName() + ".name"));
         NBTTagCompound nbt;
         if (stack.hasTagCompound()) {
             nbt = stack.getTagCompound();

@@ -10,17 +10,16 @@ import net.minecraft.world.World;
 public class EntityOHFireBall extends EntityFireball {
     private float explosionPower;
 
-    private EntityOHFireBall(World worldIn){
+    private EntityOHFireBall(World worldIn) {
         super(worldIn);
     }
 
-    public EntityOHFireBall(World worldIn,float explosionPower) {
+    public EntityOHFireBall(World worldIn, float explosionPower) {
         super(worldIn);
         this.explosionPower = explosionPower;
     }
 
-    public EntityOHFireBall(World worldIn, EntityLivingBase shooter, double accelX, double accelY, double accelZ,float explosionPower)
-    {
+    public EntityOHFireBall(World worldIn, EntityLivingBase shooter, double accelX, double accelY, double accelZ, float explosionPower) {
         super(worldIn);
         this.shootingEntity = shooter;
         this.setSize(1.0F, 1.0F);

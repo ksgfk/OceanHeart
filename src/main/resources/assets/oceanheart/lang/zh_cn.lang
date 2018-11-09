@@ -52,6 +52,7 @@ item.button_world.name=主世界
 item.button_spawn.name=传送中枢
 item.button_bank.name=银行
 item.button_back.name=返回
+item.yggdrasill_fruit_item.name=世界树的果实
 # ===========================
 #########
 # Block #
@@ -70,6 +71,7 @@ tile.planks_yggdrasill.name="世界树"尤克特拉希尔的木板
 tile.logs_yggdrasill.name="世界树"尤克特拉希尔的原木
 tile.leaves_yggdrasill.name="世界树"尤克特拉希尔的叶子
 tile.saplings_yggdrasill.name="世界树"尤克特拉希尔的种子
+tile.yggdrasill_fruit.name="世界树"尤克特拉希尔的果实
 # =========================
 ################
 # Creative Tab #
@@ -143,9 +145,11 @@ tooltip.item.ingot_leve_soul.desc=让火焰净化一切!
 tooltip.item.ingot_ocean_soul.desc=海洋,生物的摇篮
 tooltip.item.ingot_ocean_soul_unforge.desc=它内部似乎还有杂质
 tooltip.item.terminal.desc=和指挥部连络的便携通讯工具
+tooltip.item.yggdrasill_fruit_item.desc=超级果实,吃下后会得到大幅强化
 # ----------Block.ingot----------
 tooltip.tile.ore_overworld_gold_strange.desc=看上去像金矿却不是...烧一下试试
 tooltip.tile.ore_end_gold_strange.desc=嘿，老兄，别乱挖你不了解的矿石
 tooltip.tile.ore_nether_leve_soul.desc=好烫!它似乎充满了力量...
 tooltip.tile.ore_overworld_ocean_soul.desc=海底居然还有这种石头
+tooltip.tile.yggdrasill_fruit.desc=超大的超级果实,散发着耀眼的光芒
 # =========================

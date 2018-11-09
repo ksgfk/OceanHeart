@@ -12,6 +12,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EntityDamageSource;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.relauncher.Side;
@@ -63,6 +64,7 @@ public class ToolSwordExplorer extends ItemAxe implements IHasMod {
     @Override
     @SideOnly(Side.CLIENT)
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
+        tooltip.set(0, TextFormatting.RED + I18n.format(getUnlocalizedName() + ".name"));
         try {
             if (stack.getTagCompound() == null) {
                 tooltip.add(I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc.1"));

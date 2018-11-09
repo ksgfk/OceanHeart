@@ -14,11 +14,17 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.NonNullList;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraft.world.World;
 
+import javax.annotation.Nullable;
+import java.util.List;
 import java.util.Objects;
 
 
@@ -112,5 +118,13 @@ public class BlockOHLog extends BlockLog implements IHasMod, IMetaName, IHaveMet
     @Override
     public String getSpecialName(ItemStack stack) {
         return EnumLog.values()[stack.getItemDamage()].getName();
+    }
+
+    @Override
+    public void addInformation(ItemStack stack, @Nullable World player, List<String> tooltip, ITooltipFlag advanced) {
+        switch (stack.getMetadata()) {
+            case 0:
+                tooltip.set(0, TextFormatting.RED + I18n.format("tile.logs_yggdrasill.name"));
+        }
     }
 }

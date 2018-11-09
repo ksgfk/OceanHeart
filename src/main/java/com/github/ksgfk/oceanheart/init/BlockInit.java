@@ -15,6 +15,7 @@ public class BlockInit {
     public static final Block ORE_GOLD_STRANGE_END = new BlockHaveInfo("ore_end_gold_strange", Material.IRON);
     public static final Block ORE_LEVE_SOUL = new BlockHaveInfo("ore_nether_leve_soul", Material.IRON);
     public static final Block ORE_OCEAN_SOUL = new BlockHaveInfo("ore_overworld_ocean_soul", Material.IRON);
+    public static final Block YGGDRASILL_FRUIT = new BlockFruit("yggdrasill_fruit", Material.GROUND);
     //Register ores
     public static final Block ORE_END = new BlockOres("ore_end", "end");
     public static final Block ORE_OVERWORLD = new BlockOres("ore_overworld", "overworld");

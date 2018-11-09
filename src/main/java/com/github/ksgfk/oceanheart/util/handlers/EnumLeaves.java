@@ -5,13 +5,15 @@ import net.minecraft.util.IStringSerializable;
 import java.util.Locale;
 
 public enum EnumLeaves implements IStringSerializable {
-    YGGDRASILL(0);
+    YGGDRASILL(0,"yggdrasill");
 
     private int meta;
+    private String name;
     private static final EnumLeaves[] META_LOOKUP = new EnumLeaves[values().length];
 
-    EnumLeaves(int meta) {
+    EnumLeaves(int meta,String name) {
         this.meta = meta;
+        this.name = name;
     }
 
     public int getMetadata() {
@@ -35,5 +37,9 @@ public enum EnumLeaves implements IStringSerializable {
         }
 
         return META_LOOKUP[meta];
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

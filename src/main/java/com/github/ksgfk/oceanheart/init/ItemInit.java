@@ -53,6 +53,7 @@ public class ItemInit {
     public static final Item BUTTON_SPAWN = new ItemBase("button_spawn");
     public static final Item BUTTON_BANK = new ItemBase("button_bank");
     public static final Item BUTTON_BACK = new ItemBase("button_back");
+    public static final Item YGGDRASILL_FRUIT_SMALL = new ItemFruit("yggdrasill_fruit_item", 6, 6F, true);
     //Tools.
     //怎么有这么多斧头? --ksgfk
     public static final Item SWORD_FIREHUG = new ToolSwordFirehug("firehug_sword", TOOL_FIREHUG);
