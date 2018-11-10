@@ -5,12 +5,15 @@ import com.github.ksgfk.oceanheart.event.EventHandler;
 import com.github.ksgfk.oceanheart.objects.items.Smelt;
 import com.github.ksgfk.oceanheart.proxy.CommonProxy;
 import com.github.ksgfk.oceanheart.util.handlers.RegistryHandler;
+import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 @Mod(modid = OceanHeart.MODID, name = OceanHeart.NAME, version = OceanHeart.VERSION, acceptedMinecraftVersions = "1.12.2")
 public class OceanHeart {
@@ -20,6 +23,8 @@ public class OceanHeart {
     public static final String CLIENT = "com.github.ksgfk.oceanheart.proxy.ClientProxy";
     public static final String COMMON = "com.github.ksgfk.oceanheart.proxy.CommonProxy";
 
+    private static Logger logger = LogManager.getLogger("海洋之心");
+
     @Instance
     public static OceanHeart instance;
 
@@ -28,7 +33,7 @@ public class OceanHeart {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        //OBJLoader.INSTANCE.addDomain(MODID);
+        OBJLoader.INSTANCE.addDomain(MODID);
         RegistryHandler.otherRegisteries();
         RegistryHandler.perInitRegistries();
         new Config(event);

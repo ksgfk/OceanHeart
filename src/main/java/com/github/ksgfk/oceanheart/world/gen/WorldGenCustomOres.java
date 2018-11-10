@@ -16,7 +16,7 @@ import net.minecraftforge.fml.common.IWorldGenerator;
 
 import java.util.Random;
 
-public class WorldGenCustomOres implements IWorldGenerator {
+    public class WorldGenCustomOres implements IWorldGenerator {
     private WorldGenerator ore_nether_nature_crystal, ore_overworld_nature_crystal, ore_end_nature_crystal;
     private WorldGenerator ore_nether_gold_strange, ore_overworld_gold_strange, ore_end_gold_strange;
     private WorldGenerator ore_nether_leve_soul, ore_overworld_oecan_soul;

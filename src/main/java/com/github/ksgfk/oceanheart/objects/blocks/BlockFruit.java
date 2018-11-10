@@ -20,10 +20,9 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 public class BlockFruit extends BlockGlowstone implements IHasMod {
-    //private static final org.apache.logging.log4j.Logger logger = org.apache.logging.log4j.LogManager.getLogger("测试");
-
     public BlockFruit(String name, Material materialIn) {
         super(materialIn);
         setUnlocalizedName(name);
@@ -34,6 +33,7 @@ public class BlockFruit extends BlockGlowstone implements IHasMod {
         ItemInit.ITEMS.add(new ItemBlock(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));
 
         setLightLevel(1);
+        setHardness(10);
     }
 
     @Override
@@ -45,5 +45,15 @@ public class BlockFruit extends BlockGlowstone implements IHasMod {
     public void addInformation(ItemStack stack, @Nullable World player, List<String> tooltip, ITooltipFlag advanced) {
         tooltip.set(0, TextFormatting.RED + I18n.format(getUnlocalizedName() + ".name"));
         tooltip.add(TextFormatting.GOLD + I18n.format("tooltip." + getUnlocalizedName() + ".desc"));
+    }
+
+    @Override
+    public Item getItemDropped(IBlockState state, Random rand, int fortune) {
+        return ItemInit.YGGDRASILL_FRUIT_SMALL;
+    }
+
+    @Override
+    public int quantityDropped(Random random) {
+        return 1;
     }
 }

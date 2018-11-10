@@ -1,6 +1,50 @@
 {
-  "parent": "block/cube_all",
+  "forge_marker": 1,
+  "parent": "block/cube",
+  "elements": [
+    {
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ],
+      "faces": {
+        "down": {
+          "texture": "#down",
+          "cullface": "down"
+        },
+        "up": {
+          "texture": "#up",
+          "cullface": "up"
+        },
+        "north": {
+          "texture": "#side",
+          "cullface": "north"
+        },
+        "south": {
+          "texture": "#side",
+          "cullface": "south"
+        },
+        "west": {
+          "texture": "#side",
+          "cullface": "west"
+        },
+        "east": {
+          "texture": "#side",
+          "cullface": "east"
+        }
+      }
+    }
+  ],
   "textures": {
-    "all": "oceanheart:blocks/yggdrasill_fruit"
+    "up": "oceanheart:blocks/yggdrasill_fruit_up",
+    "down": "oceanheart:blocks/yggdrasill_fruit_down",
+    "side": "oceanheart:blocks/yggdrasill_fruit",
+    "particle": "oceanheart:blocks/yggdrasill_fruit"
   }
 }

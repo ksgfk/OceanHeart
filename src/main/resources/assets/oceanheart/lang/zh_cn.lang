@@ -100,6 +100,7 @@ enchantment.level.10000=MMMMMMMMMM
 # Entity #
 ##########
 entity.super_golem.name=树人
+entity.killer_whale.name=虎鲸
 # ===========================
 ##########
 #  Info  #

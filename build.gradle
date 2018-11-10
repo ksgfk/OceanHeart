@@ -55,6 +55,7 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+    compile "codechicken:CodeChickenLib:${mcversion}-${ccl_version}:deobf"
 
 }
 
@@ -79,4 +80,11 @@ processResources {
 
 tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
+}
+
+repositories {
+    maven {
+        name = "ChickenBones repo"
+        url = "http://chickenbones.net/maven/"
+    }
 }
