@@ -8,7 +8,11 @@ public enum EnumBlocks implements IStringSerializable {
     BASE(0, "base"),
     BRIGHTBLUE(1, "brightblue"),
     BLACK(2, "black"),
-    SPECIALBD(3,"specialbd");
+    SPECIALBD(3,"specialbd"),
+    MACHINE_3(4,"machine_3"),
+    MACHINE_1(5,"machine_1"),
+    MACHINE_2(6,"machine_2"),
+    STONE_1(7,"stone_1");
 
     private int meta;
     private String name;

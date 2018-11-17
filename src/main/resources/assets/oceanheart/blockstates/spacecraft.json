@@ -10,6 +10,18 @@
     "axis=y,variant=specialbd": {
       "model": "oceanheart:spacecraft_block_specialbd"
     },
+    "axis=y,variant=machine_1": {
+      "model": "oceanheart:spacecraft_block_machine_1"
+    },
+    "axis=y,variant=machine_2": {
+      "model": "oceanheart:spacecraft_block_machine_2"
+    },
+    "axis=y,variant=machine_3": {
+      "model": "oceanheart:spacecraft_block_machine_3"
+    },
+    "axis=y,variant=stone_1": {
+      "model": "oceanheart:spacecraft_block_stone_1"
+    },
     "axis=x,variant=base": {
       "model": "oceanheart:spacecraft_block_base",
       "x": 90,
@@ -17,6 +29,26 @@
     },
     "axis=x,variant=specialbd": {
       "model": "oceanheart:spacecraft_block_specialbd",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,variant=machine_1": {
+      "model": "oceanheart:spacecraft_block_machine_1",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,variant=machine_2": {
+      "model": "oceanheart:spacecraft_block_machine_2",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,variant=machine_3": {
+      "model": "oceanheart:spacecraft_block_machine_3",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,variant=stone_1": {
+      "model": "oceanheart:spacecraft_block_stone_1",
       "x": 90,
       "y": 90
     },
@@ -30,6 +62,22 @@
     },
     "axis=z,variant=brightblue": {
       "model": "oceanheart:spacecraft_block_brightblue",
+      "x": 90
+    },
+    "axis=z,variant=machine_1": {
+      "model": "oceanheart:spacecraft_block_machine_1",
+      "x": 90
+    },
+    "axis=z,variant=machine_2": {
+      "model": "oceanheart:spacecraft_block_machine_2",
+      "x": 90
+    },
+    "axis=z,variant=stone_1": {
+      "model": "oceanheart:spacecraft_block_stone_1",
+      "x": 90
+    },
+    "axis=z,variant=machine_3": {
+      "model": "oceanheart:spacecraft_block_machine_3",
       "x": 90
     },
     "axis=x,variant=black": {

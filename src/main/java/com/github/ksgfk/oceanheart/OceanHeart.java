@@ -6,7 +6,6 @@ import com.github.ksgfk.oceanheart.objects.items.Smelt;
 import com.github.ksgfk.oceanheart.proxy.ClientProxy;
 import com.github.ksgfk.oceanheart.proxy.CommonProxy;
 import com.github.ksgfk.oceanheart.util.handlers.RegistryHandler;
-import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -34,7 +33,6 @@ public class OceanHeart {
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
-        OBJLoader.INSTANCE.addDomain(MODID);
         RegistryHandler.otherRegisteries();
         RegistryHandler.perInitRegistries();
         new Config(event);

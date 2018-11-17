@@ -53,4 +53,9 @@ public class ItemFruit extends ItemFood implements IHasMod {
         tooltip.set(0, TextFormatting.RED + I18n.format(getUnlocalizedName() + ".name"));
         tooltip.add(TextFormatting.GOLD + I18n.format("tooltip." + getUnlocalizedName(stack) + ".desc"));
     }
+
+    @Override
+    public boolean hasEffect(ItemStack stack) {
+        return true;
+    }
 }

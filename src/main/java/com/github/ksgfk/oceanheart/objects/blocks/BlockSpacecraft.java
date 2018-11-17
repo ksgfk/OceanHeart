@@ -16,20 +16,16 @@ import net.minecraft.block.properties.PropertyEnum;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.NonNullList;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.RayTraceResult;
-import net.minecraft.world.World;
 
 import java.util.Objects;
 
 public class BlockSpacecraft extends BlockRotatedPillar implements IHasMod, IHaveMeta, IMetaName {
     public static final PropertyEnum<EnumBlocks> VARIANT = PropertyEnum.create("variant", EnumBlocks.class);
-    private static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.<EnumFacing.Axis>create("axis", EnumFacing.Axis.class);
+    private static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.create("axis", EnumFacing.Axis.class);
 
     public BlockSpacecraft(String name, Material material) {
         super(material);
@@ -57,38 +53,39 @@ public class BlockSpacecraft extends BlockRotatedPillar implements IHasMod, IHav
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        IBlockState iblockstate = this.getDefaultState().withProperty(VARIANT, EnumBlocks.values()[meta & 3]);
-        EnumFacing.Axis enumfacing$axis = EnumFacing.Axis.Y;
-        int i = meta & 12;
+        if (meta <= 4 || meta >= 8) {
+            IBlockState iblockstate = this.getDefaultState().withProperty(VARIANT, EnumBlocks.values()[meta & 5]);
+            EnumFacing.Axis enumfacing$axis = EnumFacing.Axis.Y;
+            int i = meta & 12;
 
-        if (i == 4) {
-            enumfacing$axis = EnumFacing.Axis.X;
-        } else if (i == 8) {
-            enumfacing$axis = EnumFacing.Axis.Z;
+            if (i == 5) {
+                enumfacing$axis = EnumFacing.Axis.X;
+            } else if (i == 10) {
+                enumfacing$axis = EnumFacing.Axis.Z;
+            }
+
+            return iblockstate.withProperty(AXIS, enumfacing$axis);
+        } else {
+            return this.getDefaultState().withProperty(VARIANT, EnumBlocks.byMetadata(meta));
         }
-
-        return iblockstate.withProperty(AXIS, enumfacing$axis);
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
         int i = state.getValue(VARIANT).ordinal();
-
-        switch (state.getValue(AXIS)) {
-            case X:
-                i |= 4;
-                break;
-            case Z:
-                i |= 8;
-                break;
+        if (i <= 4 || i >= 8) {
+            switch (state.getValue(AXIS)) {
+                case X:
+                    i |= 5;
+                    break;
+                case Z:
+                    i |= 10;
+                    break;
+            }
+            return i;
+        } else {
+            return state.getValue(VARIANT).getMetadata();
         }
-
-        return i;
-    }
-
-    @Override
-    public ItemStack getPickBlock(IBlockState state, RayTraceResult target, World world, BlockPos pos, EntityPlayer player) {
-        return new ItemStack(Item.getItemFromBlock(this), 1, getMetaFromState(world.getBlockState(pos)));
     }
 
     @Override

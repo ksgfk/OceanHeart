@@ -7,6 +7,8 @@ import net.minecraft.item.Item;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Objects;
 
@@ -23,9 +25,9 @@ public class ClientProxy extends CommonProxy {
         ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(new ResourceLocation(OceanHeart.MODID, filename), id));
     }
 
+    @SideOnly(Side.CLIENT)
     @Override
     public void registerEventHandlers() {
-
         MinecraftForge.EVENT_BUS.register(GuiOHMainMenu.class);
 
         logger.info("EventHandlers register successfully");
