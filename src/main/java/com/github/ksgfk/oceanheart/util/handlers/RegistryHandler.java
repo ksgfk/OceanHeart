@@ -14,6 +14,8 @@ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
+import static com.github.ksgfk.oceanheart.OceanHeart.logger;
+
 @EventBusSubscriber
 public class RegistryHandler {
     @SubscribeEvent
@@ -50,10 +52,9 @@ public class RegistryHandler {
         EntityInit.registerEntities();
         try {
             new ModelInit().init();
-            System.out.println("Cross Init successfully");
+            logger.info("Cross Init successfully");
         } catch (Exception e) {
             e.printStackTrace();
         }
-
     }
 }

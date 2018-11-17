@@ -1,0 +1,53 @@
+{
+  "forge_marker": 1,
+  "variants": {
+    "axis=y,variant=black": {
+      "model": "oceanheart:spacecraft_block_black"
+    },
+    "axis=y,variant=brightblue": {
+      "model": "oceanheart:spacecraft_block_brightblue"
+    },
+    "axis=y,variant=specialbd": {
+      "model": "oceanheart:spacecraft_block_specialbd"
+    },
+    "axis=x,variant=base": {
+      "model": "oceanheart:spacecraft_block_base",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,variant=specialbd": {
+      "model": "oceanheart:spacecraft_block_specialbd",
+      "x": 90,
+      "y": 90
+    },
+    "axis=z,variant=base": {
+      "model": "oceanheart:spacecraft_block_base",
+      "x": 90
+    },
+    "axis=z,variant=specialbd": {
+      "model": "oceanheart:spacecraft_block_specialbd",
+      "x": 90
+    },
+    "axis=z,variant=brightblue": {
+      "model": "oceanheart:spacecraft_block_brightblue",
+      "x": 90
+    },
+    "axis=x,variant=black": {
+      "model": "oceanheart:spacecraft_block_black",
+      "x": 90,
+      "y": 90
+    },
+    "axis=x,variant=brightblue": {
+      "model": "oceanheart:spacecraft_block_brightblue",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y,variant=base": {
+      "model": "oceanheart:spacecraft_block_base"
+    },
+    "axis=z,variant=black": {
+      "model": "oceanheart:spacecraft_block_black",
+      "x": 90
+    }
+  }
+}

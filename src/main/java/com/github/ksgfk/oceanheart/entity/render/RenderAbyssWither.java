@@ -3,7 +3,7 @@ package com.github.ksgfk.oceanheart.entity.render;
 import codechicken.lib.render.CCModel;
 import codechicken.lib.render.CCRenderState;
 import codechicken.lib.render.OBJParser;
-import com.github.ksgfk.oceanheart.entity.EntityKillerWhale;
+import com.github.ksgfk.oceanheart.entity.EntityAbyssWither;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -15,7 +15,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import javax.annotation.Nullable;
 
 @SideOnly(Side.CLIENT)
-public class RenderAbyssWither extends Render<EntityKillerWhale> {
+public class RenderAbyssWither extends Render<EntityAbyssWither> {
     public static final ResourceLocation model_abysswither_2 = new ResourceLocation("oceanheart:models/abysswither.obj");
     public static final ResourceLocation TEXTURE = new ResourceLocation("oceanheart:models/abysswither_2.png");
     private CCModel model1;
@@ -31,12 +31,12 @@ public class RenderAbyssWither extends Render<EntityKillerWhale> {
 
     @Nullable
     @Override
-    protected ResourceLocation getEntityTexture(EntityKillerWhale entity) {
+    protected ResourceLocation getEntityTexture(EntityAbyssWither entity) {
         //return null;
         return TEXTURE;
     }
 
-    public void renderRocket(EntityKillerWhale rocket, double x, double y, double z, float yaw, float partialTicks) {
+    public void renderAbyssWither(EntityAbyssWither abyssWither, double x, double y, double z, float yaw, float partialTicks) {
         GlStateManager.pushMatrix();
 
         GlStateManager.translate((float) x, (float) y, (float) z);
@@ -63,8 +63,8 @@ public class RenderAbyssWither extends Render<EntityKillerWhale> {
     }
 
     @Override
-    public void doRender(EntityKillerWhale entity, double x, double y, double z, float entityYaw, float partialTicks) {
+    public void doRender(EntityAbyssWither entity, double x, double y, double z, float entityYaw, float partialTicks) {
         this.bindEntityTexture(entity);
-        this.renderRocket((EntityKillerWhale) entity, x, y, z, entityYaw, partialTicks);
+        this.renderAbyssWither((EntityAbyssWither) entity, x, y, z, entityYaw, partialTicks);
     }
 }

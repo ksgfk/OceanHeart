@@ -9,7 +9,6 @@ import com.github.ksgfk.oceanheart.util.IHasMod;
 import com.github.ksgfk.oceanheart.util.IHaveMeta;
 import com.github.ksgfk.oceanheart.util.IMetaName;
 import com.github.ksgfk.oceanheart.util.handlers.EnumLeaves;
-import com.github.ksgfk.oceanheart.util.handlers.EnumSapling;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.SoundType;
@@ -48,6 +47,8 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
 
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlockVariants(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));
+
+        setBlockUnbreakable();
     }
 
     @Override

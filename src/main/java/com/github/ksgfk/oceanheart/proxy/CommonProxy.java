@@ -1,5 +1,6 @@
 package com.github.ksgfk.oceanheart.proxy;
 
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.network.play.server.SPacketChunkData;
 import net.minecraft.server.management.PlayerChunkMap;
@@ -9,10 +10,12 @@ import net.minecraft.world.WorldServer;
 import net.minecraft.world.chunk.Chunk;
 import net.minecraft.world.chunk.NibbleArray;
 import net.minecraft.world.chunk.storage.ExtendedBlockStorage;
+import net.minecraftforge.fml.common.network.IGuiHandler;
 
+import javax.annotation.Nullable;
 import java.util.Arrays;
 
-public class CommonProxy {
+public class CommonProxy implements IGuiHandler {
     public void registerItemRenderer(Item item, int meta, String id) {
     }
 
@@ -21,7 +24,6 @@ public class CommonProxy {
     }
 
     public void relightChunk(Chunk chunk) {
-
         if (chunk != null) {
             chunk.generateSkylightMap();
             ExtendedBlockStorage[] storage = chunk.getBlockStorageArray();
@@ -48,5 +50,21 @@ public class CommonProxy {
                     entry.sendPacket(new SPacketChunkData(chunk, -1));
             }
         }
+    }
+
+    @Nullable
+    @Override
+    public Object getServerGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+        return null;
+    }
+
+    @Nullable
+    @Override
+    public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
+        return null;
+    }
+
+    public void registerEventHandlers() {
+
     }
 }

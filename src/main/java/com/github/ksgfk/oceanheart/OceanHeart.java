@@ -3,6 +3,7 @@ package com.github.ksgfk.oceanheart;
 import com.github.ksgfk.oceanheart.common.Config;
 import com.github.ksgfk.oceanheart.event.EventHandler;
 import com.github.ksgfk.oceanheart.objects.items.Smelt;
+import com.github.ksgfk.oceanheart.proxy.ClientProxy;
 import com.github.ksgfk.oceanheart.proxy.CommonProxy;
 import com.github.ksgfk.oceanheart.util.handlers.RegistryHandler;
 import net.minecraftforge.client.model.obj.OBJLoader;
@@ -23,7 +24,7 @@ public class OceanHeart {
     public static final String CLIENT = "com.github.ksgfk.oceanheart.proxy.ClientProxy";
     public static final String COMMON = "com.github.ksgfk.oceanheart.proxy.CommonProxy";
 
-    private static Logger logger = LogManager.getLogger("海洋之心");
+    public static Logger logger = LogManager.getLogger("OceanHeart");
 
     @Instance
     public static OceanHeart instance;
@@ -37,6 +38,7 @@ public class OceanHeart {
         RegistryHandler.otherRegisteries();
         RegistryHandler.perInitRegistries();
         new Config(event);
+        new ClientProxy().registerEventHandlers();
     }
 
     @Mod.EventHandler
@@ -44,6 +46,7 @@ public class OceanHeart {
         Smelt.registerSmelting();
         //Recipe.register();
         EventHandler.init();
+
     }
 
     @Mod.EventHandler

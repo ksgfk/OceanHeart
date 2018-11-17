@@ -16,6 +16,7 @@ public class BlockInit {
     public static final Block ORE_LEVE_SOUL = new BlockHaveInfo("ore_nether_leve_soul", Material.IRON);
     public static final Block ORE_OCEAN_SOUL = new BlockHaveInfo("ore_overworld_ocean_soul", Material.IRON);
     public static final Block YGGDRASILL_FRUIT = new BlockFruit("yggdrasill_fruit", Material.GROUND);
+    public static final Block SPACECRAFT = new BlockSpacecraft("spacecraft", Material.IRON);
     //Register ores
     public static final Block ORE_END = new BlockOres("ore_end", "end");
     public static final Block ORE_OVERWORLD = new BlockOres("ore_overworld", "overworld");
@@ -27,4 +28,5 @@ public class BlockInit {
     public static final Block LOGS = new BlockOHLog("logs");//原木
     public static final Block LEAVES = new BlockOHLeaf("leaves");//树叶
     public static final Block SAPLINGS = new BlockOHSapling("saplings");//树苗
+    //飞船
 }

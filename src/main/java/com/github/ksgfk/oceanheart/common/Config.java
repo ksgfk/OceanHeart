@@ -2,11 +2,10 @@ package com.github.ksgfk.oceanheart.common;
 
 import net.minecraftforge.common.config.Configuration;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import org.apache.logging.log4j.Logger;
+import static com.github.ksgfk.oceanheart.OceanHeart.logger;
 
 public class Config {
     private static Configuration config;
-    private static Logger logger;
 
     public static String underline;
 
@@ -27,9 +26,5 @@ public class Config {
 
         config.save();
         logger.info("Finished loading config. ");
-    }
-
-    public static Logger logger() {
-        return logger;
     }
 }

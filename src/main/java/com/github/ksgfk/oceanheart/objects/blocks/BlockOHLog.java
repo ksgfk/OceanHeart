@@ -40,6 +40,9 @@ public class BlockOHLog extends BlockLog implements IHasMod, IMetaName, IHaveMet
 
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlockVariants(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));
+
+        setLightLevel(1);
+        setBlockUnbreakable();
     }
 
     @Override
@@ -67,8 +70,6 @@ public class BlockOHLog extends BlockLog implements IHasMod, IMetaName, IHaveMet
         }
 
         return iblockstate;
-
-        //return this.getDefaultState().withProperty(VARIANT, EnumLog.byMetadata(meta));
     }
 
     @Override
@@ -91,14 +92,11 @@ public class BlockOHLog extends BlockLog implements IHasMod, IMetaName, IHaveMet
         }
 
         return i;
-
-        //return ((EnumLog) state.getValue(VARIANT)).getMetadata();
     }
 
     @Override
     public int damageDropped(IBlockState state) {
         return state.getValue(VARIANT).ordinal();
-        //return ((EnumLog) state.getValue(VARIANT)).getMetadata();
     }
 
     @Override
