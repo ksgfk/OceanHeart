@@ -72,6 +72,11 @@ tile.logs_yggdrasill.name="世界树"尤克特拉希尔的原木
 tile.leaves_yggdrasill.name="世界树"尤克特拉希尔的叶子
 tile.saplings_yggdrasill.name="世界树"尤克特拉希尔的种子
 tile.yggdrasill_fruit.name="世界树"尤克特拉希尔的果实
+# -----------Other------------
+tile.spacecraft_base.name=飞船主体方块
+tile.spacecraft_brightblue.name=飞船能量管线
+tile.spacecraft_black.name=飞船能量管线
+tile.spacecraft_specialbd.name=飞船能量管线
 # =========================
 ################
 # Creative Tab #
