@@ -4,6 +4,7 @@ import codechicken.lib.render.CCModel;
 import codechicken.lib.render.CCRenderState;
 import codechicken.lib.render.OBJParser;
 import com.github.ksgfk.oceanheart.entity.EntityAbyssWither;
+import com.github.ksgfk.oceanheart.util.IRenderModel;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -15,9 +16,9 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import javax.annotation.Nullable;
 
 @SideOnly(Side.CLIENT)
-public class RenderAbyssWither extends Render<EntityAbyssWither> {
-    public static final ResourceLocation model_abysswither_2 = new ResourceLocation("oceanheart:models/abysswither.obj");
-    public static final ResourceLocation TEXTURE = new ResourceLocation("oceanheart:models/abysswither_2.png");
+public class RenderAbyssWither extends Render<EntityAbyssWither> implements IRenderModel<EntityAbyssWither> {
+    public static final ResourceLocation model_abysswither_2 = new ResourceLocation("oceanheart:models/entity/abysswither.obj");
+    public static final ResourceLocation TEXTURE = new ResourceLocation("oceanheart:textures/entity/abysswither_2.png");
     private CCModel model1;
 
     public RenderAbyssWither(RenderManager renderManager) {
@@ -36,7 +37,14 @@ public class RenderAbyssWither extends Render<EntityAbyssWither> {
         return TEXTURE;
     }
 
-    public void renderAbyssWither(EntityAbyssWither abyssWither, double x, double y, double z, float yaw, float partialTicks) {
+    @Override
+    public void doRender(EntityAbyssWither entity, double x, double y, double z, float entityYaw, float partialTicks) {
+        this.bindEntityTexture(entity);
+        this.render((EntityAbyssWither) entity, x, y, z, entityYaw, partialTicks);
+    }
+
+    @Override
+    public void render(EntityAbyssWither entity, double x, double y, double z, float yaw, float partialTicks) {
         GlStateManager.pushMatrix();
 
         GlStateManager.translate((float) x, (float) y, (float) z);
@@ -60,11 +68,5 @@ public class RenderAbyssWither extends Render<EntityAbyssWither> {
         ccrs.draw();
 
         GlStateManager.popMatrix();
-    }
-
-    @Override
-    public void doRender(EntityAbyssWither entity, double x, double y, double z, float entityYaw, float partialTicks) {
-        this.bindEntityTexture(entity);
-        this.renderAbyssWither((EntityAbyssWither) entity, x, y, z, entityYaw, partialTicks);
     }
 }
