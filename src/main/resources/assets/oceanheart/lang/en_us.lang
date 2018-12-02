@@ -36,7 +36,7 @@ item.ingot_legend_golden.name=Golden legendary
 item.ingot_legend_end.name=Void
 item.ingot_leve_soul.name=熔岩之魂
 item.ingot_ocean_soul.name=海洋之魂
-item.ingot_ocean_soul_unforge.name=粗糙的海洋之魂
+item.ingot_ocean_soul_unforge.name=Rough OceanSoul
 # -----------Nugget-----------
 item.nugget_legend.name=Legendary power
 # -----------Powder-----------
@@ -77,6 +77,10 @@ tile.spacecraft_base.name=Spacecraft Main Square
 tile.spacecraft_brightblue.name=Spacecraft Energy Pipeline
 tile.spacecraft_black.name=Spacecraft Energy Pipeline
 tile.spacecraft_specialbd.name=Spacecraft Energy Pipeline
+tile.spacecraft_machine_1.name=Spacecraft Component
+tile.spacecraft_machine_2.name=Spacecraft Component
+tile.spacecraft_machine_3.name=Spacecraft Component
+tile.spacecraft_stone_1.name=Mysterious Mineral(decoration)
 # =========================
 ################
 # Creative Tab #

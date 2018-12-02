@@ -25,6 +25,8 @@ import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 
 import java.util.Random;
 
+import static com.github.ksgfk.oceanheart.OceanHeart.logger;
+
 public class WorldGenYggdrasillTree extends WorldGenAbstractTree {
 
     /**
@@ -603,7 +605,6 @@ public class WorldGenYggdrasillTree extends WorldGenAbstractTree {
         }
     }
 
-    private static final org.apache.logging.log4j.Logger logger = org.apache.logging.log4j.LogManager.getLogger("世界树");
     private int blocksAdded = 0;
 
     private TLongObjectHashMap<Chunk> chunkMap;
