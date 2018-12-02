@@ -44,6 +44,8 @@ public class BlockOHPlanks extends Block implements IMetaName, IHasMod, IHaveMet
 
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlockVariants(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));
+
+        setLightLevel(0.25f);
     }
 
     @Override

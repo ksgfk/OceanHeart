@@ -45,6 +45,8 @@ public class BlockOHSapling extends BlockBush implements IGrowable, IMetaName, I
 
         BlockInit.BLOCKS.add(this);
         ItemInit.ITEMS.add(new ItemBlockVariants(this).setRegistryName(Objects.requireNonNull(this.getRegistryName())));
+
+        setLightLevel(0.125f);
     }
 
     @Override

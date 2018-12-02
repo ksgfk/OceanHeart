@@ -1,4 +1,5 @@
 {
+  "forge_marker": 1,
   "parent": "block/leaves",
   "textures": {
     "all": "oceanheart:blocks/leaves_yggdrasill"
