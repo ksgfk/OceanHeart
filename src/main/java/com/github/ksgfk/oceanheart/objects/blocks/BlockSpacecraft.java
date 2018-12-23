@@ -25,7 +25,7 @@ import java.util.Objects;
 
 public class BlockSpacecraft extends BlockRotatedPillar implements IHasMod, IHaveMeta, IMetaName {
     public static final PropertyEnum<EnumBlocks> VARIANT = PropertyEnum.create("variant", EnumBlocks.class);
-    private static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.create("axis", EnumFacing.Axis.class);
+    public static final PropertyEnum<EnumFacing.Axis> AXIS = PropertyEnum.<EnumFacing.Axis>create("axis", EnumFacing.Axis.class);
 
     public BlockSpacecraft(String name, Material material) {
         super(material);
@@ -53,39 +53,44 @@ public class BlockSpacecraft extends BlockRotatedPillar implements IHasMod, IHav
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        if (meta <= 4 || meta >= 8) {
-            IBlockState iblockstate = this.getDefaultState().withProperty(VARIANT, EnumBlocks.values()[meta & 5]);
-            EnumFacing.Axis enumfacing$axis = EnumFacing.Axis.Y;
-            int i = meta & 12;
+        //if (meta <= 4 || meta >= 8) {
+        /*
+        IBlockState iblockstate = this.getDefaultState().withProperty(VARIANT, EnumBlocks.values()[meta & 4]);
+        EnumFacing.Axis enumfacing$axis = EnumFacing.Axis.Y;
+        int i = meta & 12;
 
-            if (i == 5) {
-                enumfacing$axis = EnumFacing.Axis.X;
-            } else if (i == 10) {
-                enumfacing$axis = EnumFacing.Axis.Z;
-            }
-
-            return iblockstate.withProperty(AXIS, enumfacing$axis);
-        } else {
-            return this.getDefaultState().withProperty(VARIANT, EnumBlocks.byMetadata(meta));
+        if (i == 4) {
+            enumfacing$axis = EnumFacing.Axis.X;
+        } else if (i == 8) {
+            enumfacing$axis = EnumFacing.Axis.Z;
         }
+
+        return iblockstate.withProperty(AXIS, enumfacing$axis).withProperty(VARIANT, EnumBlocks.values()[meta & 4]);
+        */
+        //} else {
+        //return this.getDefaultState().withProperty(VARIANT, EnumBlocks.byMetadata(meta));
+        //}
+        IBlockState iblockstate = this.getDefaultState().withProperty(VARIANT, EnumBlocks.values()[meta]);
+        return iblockstate;
     }
 
     @Override
     public int getMetaFromState(IBlockState state) {
-        int i = state.getValue(VARIANT).ordinal();
-        if (i <= 4 || i >= 8) {
-            switch (state.getValue(AXIS)) {
-                case X:
-                    i |= 5;
-                    break;
-                case Z:
-                    i |= 10;
-                    break;
-            }
-            return i;
-        } else {
-            return state.getValue(VARIANT).getMetadata();
+        int i = state.getValue(VARIANT).getMeta();
+
+        /*
+        EnumFacing.Axis enumfacing$axis = (EnumFacing.Axis)state.getValue(AXIS);
+
+        if (enumfacing$axis == EnumFacing.Axis.X)
+        {
+            i |= 4;
         }
+        else if (enumfacing$axis == EnumFacing.Axis.Z)
+        {
+            i |= 8;
+        }
+        */
+        return i;
     }
 
     @Override

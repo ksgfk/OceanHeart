@@ -27,11 +27,12 @@ public class EntityKillerWhale extends EntityAnimal {
         return null;
     }
 
+/*
     @Override
     protected void initEntityAI() {
         this.tasks.addTask(5, new AIRandomFly(this));
     }
-
+*/
     // [VanillaCopy] from EntityGhast but we use wanderFactor instead, we also stop moving when we have a target
     public static class AIRandomFly extends EntityAIBase {
         private final EntityKillerWhale parentEntity;

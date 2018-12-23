@@ -1,12 +1,15 @@
 package com.github.ksgfk.oceanheart.event;
 
 import com.github.ksgfk.oceanheart.OceanHeart;
+import com.github.ksgfk.oceanheart.entity.EntityKillerWhale;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
+import net.minecraftforge.event.entity.EntityEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
@@ -16,6 +19,7 @@ import net.minecraftforge.fml.common.eventhandler.EventBus;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
+import static com.github.ksgfk.oceanheart.OceanHeart.logger;
 
 @Mod.EventBusSubscriber(modid = OceanHeart.MODID)
 public class EventHandler {
@@ -46,14 +50,14 @@ public class EventHandler {
                 try {
                     item.getTagCompound().setInteger("levelup", item.getTagCompound().getInteger("levelup") / 2);//死亡时，如果主手是开拓者，掉一半能量
                 } catch (NullPointerException e) {
-                    System.out.println("No nbt key called \"levelup\" on this sword");
+                    logger.error("No nbt key called \"levelup\" on this sword");
                 }
             }
             if (handItemName2.equals(trailblazerName)) {
                 try {
                     item2.getTagCompound().setInteger("levelup", item.getTagCompound().getInteger("levelup") / 2);//死亡时，如果副手是开拓者，掉一半能量
                 } catch (NullPointerException e) {
-                    System.out.println("No nbt key called \"levelup\" on this sword");
+                    logger.error("No nbt key called \"levelup\" on this sword");
                 }
             }
         }
@@ -208,12 +212,28 @@ public class EventHandler {
             event.setCanceled(true);
         }
     }
-/*
+
+    /*
+        @SubscribeEvent
+        public static void attackEvent(LivingAttackEvent event) {
+            if (event.getEntity() instanceof EntityMob) {
+                System.out.println();
+            }
+        }
+    */
+
+    /**
+     * 获取虎鲸坐标
+     *
+     * @param event 生成事件
+     */
     @SubscribeEvent
-    public static void attackEvent(LivingAttackEvent event) {
-        if (event.getEntity() instanceof EntityMob) {
-            System.out.println();
+    public static void getEntityKillerWhalePos(EntityEvent event) {
+        if (event.getEntity() instanceof EntityKillerWhale) {
+            EntityKillerWhale entityKillerWhale = (EntityKillerWhale) event.getEntity();
+            Vec3d vec3d = entityKillerWhale.getPositionVector();
+
+            logger.info("生成虎鲸:" + vec3d.toString());
         }
     }
-*/
 }
