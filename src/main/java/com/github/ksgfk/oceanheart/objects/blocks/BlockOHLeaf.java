@@ -9,7 +9,6 @@ import com.github.ksgfk.oceanheart.util.IHasMod;
 import com.github.ksgfk.oceanheart.util.IHaveMeta;
 import com.github.ksgfk.oceanheart.util.IMetaName;
 import com.github.ksgfk.oceanheart.util.handlers.EnumLeaves;
-import net.minecraft.block.Block;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.SoundType;
@@ -21,18 +20,14 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -54,9 +49,9 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
 
         setBlockUnbreakable();
         setLightLevel(0.5f);
-        isOpaqueCube(this.getDefaultState().withProperty(VARIANT, EnumLeaves.YGGDRASILL));
-        isFullBlock(this.getDefaultState().withProperty(VARIANT, EnumLeaves.YGGDRASILL));
-        isFullCube(this.getDefaultState().withProperty(VARIANT, EnumLeaves.YGGDRASILL));
+        isOpaqueCube(this.getDefaultState());
+        isFullBlock(this.getDefaultState());
+        isFullCube(this.getDefaultState());
     }
 
     @Override
@@ -147,7 +142,7 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
                 tooltip.set(0, TextFormatting.RED + I18n.format("tile.leaves_yggdrasill.name"));
         }
     }
-
+/*
     private int[] decayBlockCache;
 
     @Override
@@ -246,12 +241,13 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
             }
         }
     }
-
+*/
+/*
     protected void removeLeaves(World world, BlockPos pos) {
         this.dropBlockAsItem(world, pos, world.getBlockState(pos), 0);
         world.setBlockToAir(pos);
     }
-
+*/
     @Override
     public void beginLeavesDecay(IBlockState state, World world, BlockPos pos) {
         super.beginLeavesDecay(state, world, pos);
@@ -263,12 +259,6 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
     }
 
     @Override
-    @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer() {
-        return Blocks.LEAVES.getBlockLayer();
-    }
-
-    @Override
     public boolean isBlockNormalCube(IBlockState blockState) {
         return false;
     }
@@ -277,4 +267,5 @@ public class BlockOHLeaf extends BlockLeaves implements IMetaName, IHasMod, IHav
     public boolean isFullCube(IBlockState state) {
         return false;
     }
+
 }

@@ -1,22 +1,19 @@
 package com.github.ksgfk.oceanheart.entity.render;
 
-import codechicken.lib.render.CCModel;
-import codechicken.lib.render.CCRenderState;
-import codechicken.lib.render.OBJParser;
 import com.github.ksgfk.oceanheart.entity.EntityKillerWhale;
-import com.github.ksgfk.oceanheart.util.IRenderModel;
-import net.minecraft.client.renderer.GlStateManager;
-import net.minecraft.client.renderer.entity.Render;
+import com.github.ksgfk.oceanheart.entity.model.ModelKillerWhale;
+import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
-import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 import javax.annotation.Nullable;
 
+/*
 @SideOnly(Side.CLIENT)
 public class RenderKillerWhale extends Render<EntityKillerWhale> implements IRenderModel<EntityKillerWhale> {
+
     public static final ResourceLocation MODEL_KILLERWHALE = new ResourceLocation("oceanheart:models/entity/killerwhale.obj");
     public static final ResourceLocation TEXTURE = new ResourceLocation("oceanheart:textures/entity/killerwhale.png");
     private CCModel model;
@@ -67,5 +64,25 @@ public class RenderKillerWhale extends Render<EntityKillerWhale> implements IRen
     public void doRender(EntityKillerWhale entity, double x, double y, double z, float entityYaw, float partialTicks) {
         this.bindEntityTexture(entity);
         this.render((EntityKillerWhale) entity, x, y, z, entityYaw, partialTicks);
+    }
+
+}
+*/
+@SideOnly(Side.CLIENT)
+public class RenderKillerWhale extends RenderLiving<EntityKillerWhale> {
+    public static final ResourceLocation TEXTURES = new ResourceLocation("oceanheart:textures/entity/killerwhale.png");
+
+    public RenderKillerWhale(RenderManager rendermanagerIn) {
+        super(rendermanagerIn, new ModelKillerWhale(), 0.5F);
+    }
+
+    @Nullable
+    @Override
+    protected ResourceLocation getEntityTexture(EntityKillerWhale entity) {
+        return TEXTURES;
+    }
+
+    protected void applyRotations(EntityKillerWhale entityLiving, float p_77043_2_, float rotationYaw, float partialTicks) {
+        super.applyRotations(entityLiving, p_77043_2_, rotationYaw, partialTicks);
     }
 }

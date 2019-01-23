@@ -1,39 +1,29 @@
 package com.github.ksgfk.oceanheart.entity;
 
-import net.minecraft.entity.EntityAgeable;
-import net.minecraft.entity.ai.EntityAIBase;
-import net.minecraft.entity.ai.EntityMoveHelper;
-import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.world.World;
 
-import javax.annotation.Nullable;
-import java.util.Random;
-
-public class EntityKillerWhale extends EntityAnimal {
+public class EntityKillerWhale extends EntitySuperGolem {
     float wanderFactor;
 
     public EntityKillerWhale(World worldIn) {
         super(worldIn);
-        setSize(2, 2);
+        /*
+        setSize(1, 1);
         setHealth(50);
-        setRotationYawHead(90);
+        setRotation(180, 0);
 
         this.wanderFactor = 16.0F;
+        */
     }
 
-    @Nullable
-    @Override
-    public EntityAgeable createChild(EntityAgeable ageable) {
-        return null;
-    }
-
-/*
-    @Override
-    protected void initEntityAI() {
-        this.tasks.addTask(5, new AIRandomFly(this));
-    }
-*/
+    /*
+        @Override
+        protected void initEntityAI() {
+            this.tasks.addTask(5, new AIRandomFly(this));
+        }
+    */
     // [VanillaCopy] from EntityGhast but we use wanderFactor instead, we also stop moving when we have a target
+    /*
     public static class AIRandomFly extends EntityAIBase {
         private final EntityKillerWhale parentEntity;
 
@@ -70,5 +60,14 @@ public class EntityKillerWhale extends EntityAnimal {
             this.parentEntity.getMoveHelper().setMoveTo(d0, d1, d2, 1.0D);
         }
     }
+
+    @Override
+    protected void setRotation(float yaw, float pitch) {
+        super.setRotation(yaw, pitch);
+
+        this.rotationYaw = yaw;
+        this.rotationPitch = pitch;
+    }
+    */
 }
 

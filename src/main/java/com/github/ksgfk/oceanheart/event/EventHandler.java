@@ -1,15 +1,12 @@
 package com.github.ksgfk.oceanheart.event;
 
 import com.github.ksgfk.oceanheart.OceanHeart;
-import com.github.ksgfk.oceanheart.entity.EntityKillerWhale;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
-import net.minecraftforge.event.entity.EntityEvent;
 import net.minecraftforge.event.entity.living.LivingAttackEvent;
 import net.minecraftforge.event.entity.living.LivingDeathEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
@@ -227,6 +224,7 @@ public class EventHandler {
      *
      * @param event 生成事件
      */
+    /*
     @SubscribeEvent
     public static void getEntityKillerWhalePos(EntityEvent event) {
         if (event.getEntity() instanceof EntityKillerWhale) {
@@ -236,4 +234,5 @@ public class EventHandler {
             logger.info("生成虎鲸:" + vec3d.toString());
         }
     }
+    */
 }
